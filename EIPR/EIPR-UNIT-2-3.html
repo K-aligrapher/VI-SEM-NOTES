@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Entrepreneurship Study Material — Unit II & Unit III</title>
+<style>
+  :root{
+    --navy:#1b2a4a;
+    --blue:#2a5298;
+    --accent:#c9973e;
+    --accent2:#3d7a68;
+    --bg:#fbfaf7;
+    --card:#ffffff;
+    --text:#2a2a2a;
+    --muted:#6b6f76;
+    --border:#e4e0d6;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"Georgia","Cambria",serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.65;
+  }
+  .layout{display:flex; min-height:100vh;}
+  nav{
+    width:270px;
+    flex-shrink:0;
+    background:var(--navy);
+    color:#eef1f7;
+    padding:24px 18px;
+    position:sticky;
+    top:0;
+    height:100vh;
+    overflow-y:auto;
+  }
+  nav h2{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:0.75rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:22px 0 8px;
+    border-top:1px solid rgba(255,255,255,0.15);
+    padding-top:16px;
+  }
+  nav h2:first-child{border-top:none; margin-top:0; padding-top:0;}
+  nav a{
+    display:block;
+    color:#cfd8e8;
+    text-decoration:none;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:0.86rem;
+    padding:5px 8px;
+    border-radius:4px;
+    margin-bottom:2px;
+  }
+  nav a:hover{background:rgba(255,255,255,0.08); color:#fff;}
+  main{
+    flex:1;
+    padding:48px 56px 100px;
+    max-width:980px;
+  }
+  .cover{
+    text-align:center;
+    padding:60px 20px 50px;
+    border-bottom:3px double var(--accent);
+    margin-bottom:50px;
+  }
+  .cover .kicker{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-size:0.85rem;
+    margin-bottom:14px;
+  }
+  .cover h1{
+    font-size:2.5rem;
+    margin:0 0 12px;
+    color:var(--navy);
+  }
+  .cover p{color:var(--muted); font-size:1.05rem;}
+  .unit-title{
+    background:linear-gradient(135deg,var(--navy),var(--blue));
+    color:#fff;
+    padding:38px 40px;
+    border-radius:10px;
+    margin:60px 0 34px;
+  }
+  .unit-title .tag{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:0.78rem;
+    color:var(--accent);
+  }
+  .unit-title h1{margin:8px 0 10px; font-size:2rem;}
+  .unit-title p{margin:0; color:#dbe3f2; font-size:0.98rem;}
+  h1,h2,h3,h4{color:var(--navy); font-family:"Helvetica Neue",Arial,sans-serif;}
+  h2.section{
+    font-size:1.5rem;
+    border-bottom:2px solid var(--accent);
+    padding-bottom:8px;
+    margin-top:56px;
+  }
+  h3.sub{
+    font-size:1.18rem;
+    color:var(--blue);
+    margin-top:34px;
+    border-left:4px solid var(--accent2);
+    padding-left:12px;
+  }
+  h4{font-size:1.02rem; color:var(--accent2); margin-top:22px;}
+  p{margin:10px 0;}
+  ul,ol{margin:8px 0; padding-left:24px;}
+  li{margin-bottom:5px;}
+  .card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:18px 22px;
+    margin:18px 0;
+    box-shadow:0 1px 3px rgba(0,0,0,0.04);
+  }
+  .definition{
+    background:#f2f0e8;
+    border-left:4px solid var(--accent);
+    padding:14px 18px;
+    margin:16px 0;
+    font-style:italic;
+    border-radius:0 6px 6px 0;
+  }
+  .case{
+    background:#eef3f1;
+    border:1px solid #cfe0da;
+    border-radius:8px;
+    padding:16px 20px;
+    margin:16px 0;
+  }
+  .case .case-tag{
+    display:inline-block;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:0.7rem;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    background:var(--accent2);
+    color:#fff;
+    padding:3px 10px;
+    border-radius:12px;
+    margin-bottom:8px;
+  }
+  .formula{
+    background:#fff8ec;
+    border:1px solid #e9d8ae;
+    border-radius:6px;
+    padding:14px 20px;
+    margin:14px 0;
+    font-family:"Courier New",monospace;
+    font-size:0.98rem;
+    text-align:center;
+  }
+  .example{
+    background:#f6f5ff;
+    border:1px dashed #b8b3e0;
+    border-radius:6px;
+    padding:14px 20px;
+    margin:14px 0;
+  }
+  .example .ex-tag{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:0.7rem;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:#5a52a3;
+    font-weight:bold;
+  }
+  table{
+    border-collapse:collapse;
+    width:100%;
+    margin:16px 0;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:0.92rem;
+  }
+  th,td{
+    border:1px solid var(--border);
+    padding:8px 12px;
+    text-align:left;
+    vertical-align:top;
+  }
+  th{background:var(--navy); color:#fff;}
+  tr:nth-child(even) td{background:#f7f6f1;}
+  .toc-box{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:22px 26px;
+    margin:24px 0 40px;
+  }
+  .toc-box h3{margin-top:0; color:var(--navy);}
+  .toc-box a{color:var(--blue); text-decoration:none;}
+  .toc-box a:hover{text-decoration:underline;}
+  .badge{
+    display:inline-block;
+    background:var(--accent);
+    color:#fff;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:0.7rem;
+    padding:2px 9px;
+    border-radius:10px;
+    margin-left:8px;
+    vertical-align:middle;
+  }
+  .keypoint{
+    border-left:4px solid var(--blue);
+    background:#eef2fa;
+    padding:12px 18px;
+    margin:14px 0;
+    border-radius:0 6px 6px 0;
+  }
+  .divider{
+    border:none;
+    border-top:1px solid var(--border);
+    margin:40px 0;
+  }
+  footer{
+    text-align:center;
+    color:var(--muted);
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:0.8rem;
+    padding:30px 0;
+    border-top:1px solid var(--border);
+    margin-top:60px;
+  }
+  @media print{
+    nav{display:none;}
+    main{padding:10px; max-width:100%;}
+    .unit-title{background:var(--navy) !important; -webkit-print-color-adjust:exact;}
+  }
+  @media (max-width:900px){
+    .layout{flex-direction:column;}
+    nav{width:100%; height:auto; position:relative;}
+    main{padding:24px;}
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+
+<nav>
+  <h2>Contents</h2>
+  <a href="#cover">Cover</a>
+
+  <h2>Unit II</h2>
+  <a href="#u2-opp">Identifying Market Opportunities</a>
+  <a href="#u2-eng">Engineering in Ideation</a>
+  <a href="#u2-cross">Cross-Disciplinary Collaboration</a>
+  <a href="#u2-market-feas">Market Feasibility & Demand</a>
+  <a href="#u2-tech-feas">Technical Feasibility: PoC & Prototype</a>
+  <a href="#u2-fin-feas">Financial Feasibility Analysis</a>
+  <a href="#u2-bplan">Elements of a Business Plan</a>
+  <a href="#u2-strategy">Strategic Planning</a>
+  <a href="#u2-swoc">Vision, Mission, Goals, SWOC</a>
+  <a href="#u2-porter">Porter's Generic Strategies</a>
+  <a href="#u2-growth">Growth Strategies</a>
+  <a href="#u2-writing">Writing a Business Plan</a>
+  <a href="#u2-model">Business Models & Prototypes</a>
+
+  <h2>Unit III</h2>
+  <a href="#u3-intro">Entrepreneurial Marketing Overview</a>
+  <a href="#u3-4ps">The 4Ps of Marketing</a>
+  <a href="#u3-4ps-case">4P Case Studies</a>
+  <a href="#u3-stp">STP: Segmentation, Targeting, Positioning</a>
+  <a href="#u3-brand">Branding & Product Development</a>
+  <a href="#u3-uvp">Unique Value Proposition</a>
+  <a href="#u3-digital">Digital Marketing</a>
+  <a href="#u3-finance">Entrepreneurial Finance</a>
+  <a href="#u3-sources">Sources of Financing</a>
+  <a href="#u3-hrm">Human Resource Management</a>
+  <a href="#u3-finman">Financial Management</a>
+  <a href="#u3-budget">Budgeting</a>
+  <a href="#u3-cashflow">Cash Flow Management</a>
+  <a href="#u3-fsa">Financial Statement Analysis</a>
+  <a href="#u3-risk">Risk Management & Insurance</a>
+  <a href="#u3-legal">Legal & Ethical Issues</a>
+</nav>
+
+<main>
+
+  <div class="cover" id="cover">
+    <div class="kicker">Complete Study Guide</div>
+    <h1>Entrepreneurship</h1>
+    <p>Unit II — Entrepreneurial Opportunity Evaluation & Business Planning<br>
+    Unit III — Entrepreneurial Marketing, Sales, Finance & Resource Management</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- UNIT II -->
+  <!-- ============================================================ -->
+
+  <div class="unit-title">
+    <div class="tag">Unit II</div>
+    <h1>Entrepreneurial Opportunity Evaluation &amp; Business Planning and Strategy Development</h1>
+    <p>Identifying opportunities, ideation, feasibility analysis, business plan structure, and strategic planning.</p>
+  </div>
+
+  <div class="toc-box">
+    <h3>Unit II Topics</h3>
+    <ul>
+      <li><a href="#u2-opp">Identifying Market Opportunities and Trends</a></li>
+      <li><a href="#u2-eng">Integration of Engineering Principles in Ideation Process</a></li>
+      <li><a href="#u2-cross">Cross-Disciplinary Collaboration for Technological Innovation</a></li>
+      <li><a href="#u2-market-feas">Assessing Market Feasibility and Demand Analysis</a></li>
+      <li><a href="#u2-tech-feas">Evaluating Technical Feasibility: Prototype Development & Proof of Concept</a></li>
+      <li><a href="#u2-fin-feas">Financial Feasibility Analysis: Cost, Revenue, Break-Even</a></li>
+      <li><a href="#u2-bplan">Elements of a Business Plan</a></li>
+      <li><a href="#u2-strategy">Strategic Planning</a></li>
+      <li><a href="#u2-swoc">Vision, Mission, Goals, Objectives, SWOC Analysis</a></li>
+      <li><a href="#u2-porter">Porter's Generic Strategies</a></li>
+      <li><a href="#u2-growth">Growth Strategies</a></li>
+      <li><a href="#u2-writing">Writing a Business Plan (Template Structure)</a></li>
+      <li><a href="#u2-model">Developing Business Models and Prototypes</a></li>
+    </ul>
+  </div>
+
+  <h2 class="section" id="u2-opp">1. Identifying Market Opportunities and Trends</h2>
+  <p>A business opportunity is visible only to an enterprising person and never occurs by chance — the entrepreneur must actively collect information, analyse the business environment, and assess marketability and profit potential. An <strong>"attractive"</strong> opportunity must be stable, mature, logical, and realistic — not merely fanciful.</p>
+
+  <div class="keypoint">
+    <strong>Two decisive attributes of a business opportunity:</strong>
+    <ol>
+      <li><strong>Market potential</strong> — the demand the product/service can generate (gap between existing and future demand/supply, sometimes a "created" need, e.g. health drinks, energy supplements).</li>
+      <li><strong>Return on investment</strong> — revealed through a commercial feasibility study covering technical, economic, social, and environmental viability.</li>
+    </ol>
+  </div>
+
+  <h3 class="sub">Opportunity Assessment Plan</h3>
+  <p>Different from a full business plan — shorter, focused on the <em>opportunity</em> (not the venture), has no pro-forma financial statements, and is used to decide whether to act on an opportunity or wait.</p>
+  <table>
+    <tr><th>Section</th><th>Focus</th><th>Includes</th></tr>
+    <tr><td>Section 1 (Major)</td><td>Product/service &amp; competition</td><td>Market need, product description, competitive products/companies, unique selling proposition (USP)</td></tr>
+    <tr><td>Section 2 (Major)</td><td>The market</td><td>Market need filled, social conditions, supporting data, market size/trends/characteristics, growth rate</td></tr>
+  </table>
+
+  <h2 class="section" id="u2-eng">2. Integration of Engineering Principles in Ideation Process</h2>
+  <p>The ideation process is a structured framework for generating and refining ideas, ensuring they are plentiful, strategically aligned, and practically feasible. Unlike spontaneous brainstorming, it is collaborative, systematic, and ongoing.</p>
+
+  <h3 class="sub">Stages of the Ideation Process</h3>
+  <table>
+    <tr><th>Stage</th><th>Description</th></tr>
+    <tr><td><strong>Problem Identification</strong></td><td>Clearly define the challenge/opportunity using data analysis, stakeholder input, or market research.</td></tr>
+    <tr><td><strong>Idea Generation</strong></td><td>Brainstorm broadly using divergent thinking, mind mapping, workshops; quantity over quality at this stage.</td></tr>
+    <tr><td><strong>Idea Evaluation</strong></td><td>Filter ideas via feasibility, impact, cost, and strategic alignment — using SWOT, scoring models, stakeholder feedback.</td></tr>
+    <tr><td><strong>Implementation Planning</strong></td><td>Turn selected ideas into project plans with resources, timelines, and execution strategies; continuous feedback loop.</td></tr>
+  </table>
+
+  <h3 class="sub">Characteristics of a Successful Ideation Process</h3>
+  <ul>
+    <li>Collaboration and inclusivity — diverse teams generate richer ideas.</li>
+    <li>Clear objectives that focus creative effort.</li>
+    <li>Continuous feedback loops at every stage.</li>
+    <li>Structured evaluation using explicit criteria.</li>
+    <li>A supportive culture that tolerates risk-taking and rewards initiative.</li>
+  </ul>
+
+  <h2 class="section" id="u2-cross">3. Cross-Disciplinary Collaboration for Technological Innovation</h2>
+  <p>Cross-disciplinary teams act as bridges between scientific disciplines, enabling transfer of knowledge and methods across fields for a more holistic, interconnected approach to research. By breaking down silos, they pave the way for integrated solutions that transcend traditional boundaries.</p>
+  <div class="keypoint">
+    Merging diverse fields results in <strong>inclusive, equitable solutions</strong> that address a broad spectrum of needs and reduce bias. Education and community integration prepare innovations to be socially responsible and universally accessible, in line with inclusive design principles.
+  </div>
+
+  <h2 class="section" id="u2-market-feas">4. Assessing Market Feasibility and Demand Analysis</h2>
+  <p>Evaluating market feasibility involves preliminary analysis, market research, financial assessment, and risk evaluation.</p>
+
+  <h3 class="sub">4.1 Preliminary Analysis</h3>
+  <p>The first step, determining whether a full feasibility study is warranted.</p>
+  <ul>
+    <li><strong>Objectives:</strong> determine viability, identify key stakeholders, gather initial data.</li>
+    <li><strong>Stakeholder engagement:</strong> interviews and surveys with team members, investors, industry experts, potential customers.</li>
+    <li><strong>Market demand assessment:</strong> market surveys, competitor analysis.</li>
+    <li><strong>Documentation review:</strong> similar business plans, market research reports, comparable financial statements.</li>
+  </ul>
+  <div class="definition">
+    Guiding questions: Is the business logistically achievable? What technology is required? What are the risks? How does the offering differentiate? What is the market's future trajectory? Are financial resources sufficient?
+  </div>
+  <p>The outcome is a <strong>Go / No-Go</strong> decision on proceeding to a full feasibility study.</p>
+
+  <h3 class="sub">4.2 Market Research</h3>
+  <p>A systematic process of gathering, analysing, and interpreting information about the market — target audience, competitors, and industry landscape.</p>
+  <table>
+    <tr><th>Type</th><th>Description</th></tr>
+    <tr><td>Primary Research</td><td>New data collected directly via surveys, interviews, focus groups, observation.</td></tr>
+    <tr><td>Secondary Research</td><td>Existing data from industry reports, academic papers, competitor analyses — cheaper, less specific.</td></tr>
+    <tr><td>Qualitative Research</td><td>Understands motivations/behaviour via interviews and focus groups.</td></tr>
+    <tr><td>Quantitative Research</td><td>Numerical data, often via closed-ended surveys, allows statistical generalisation.</td></tr>
+  </table>
+  <h4>Steps in Conducting Market Research</h4>
+  <ol>
+    <li>Define objectives</li>
+    <li>Identify target audience (buyer personas)</li>
+    <li>Choose research methodology</li>
+    <li>Collect data</li>
+    <li>Analyze the data</li>
+    <li>Draw conclusions and make decisions</li>
+  </ol>
+
+  <h3 class="sub">4.3 Financial Feasibility (Overview)</h3>
+  <ul>
+    <li><strong>Projected Income Statement</strong> — estimating revenue and expenses.</li>
+    <li><strong>Break-even Analysis</strong> — when the business becomes profitable.</li>
+    <li><strong>Investment Requirements</strong> — initial investment and ongoing costs.</li>
+  </ul>
+  <p>(Full detailed treatment appears in Section 6 below.)</p>
+
+  <h3 class="sub">4.4 Risk Assessment</h3>
+  <ul>
+    <li>Evaluate market competition, regulatory changes, economic downturns.</li>
+    <li>Develop contingency plans.</li>
+    <li>Conduct SWOT analysis to guide decisions.</li>
+  </ul>
+
+  <h3 class="sub">4.5 Scalability and Growth Potential</h3>
+  <ul>
+    <li>Potential for expansion into new markets/products.</li>
+    <li>Opportunities for innovation or partnership.</li>
+    <li>Adaptability of the business model to changing conditions.</li>
+  </ul>
+
+  <h3 class="sub">4.6 Continuous Monitoring and Adaptation</h3>
+  <p>Because market dynamics constantly evolve, entrepreneurs must regularly revisit feasibility studies to stay relevant and competitive.</p>
+
+  <h2 class="section" id="u2-tech-feas">5. Evaluating Technical Feasibility: Prototype Development &amp; Proof of Concept</h2>
+
+  <h3 class="sub">5.1 Proof of Concept (PoC)</h3>
+  <div class="definition">
+    A Proof of Concept is an early demonstration that a concept is technically feasible — it answers "Can this idea work?" without full-scale production.
+  </div>
+  <h4>Objectives of a PoC</h4>
+  <ul>
+    <li><strong>Feasibility testing</strong> — can it be implemented practically?</li>
+    <li><strong>Risk reduction</strong> — identify challenges early.</li>
+    <li><strong>Validation</strong> — evidence the concept can solve the problem.</li>
+    <li><strong>Attracting investment</strong> — demonstrates tangible viability.</li>
+  </ul>
+  <h4>Key Components</h4>
+  <ul>
+    <li>Clear objectives</li>
+    <li>Product specifications</li>
+    <li>Demonstration (working prototype/model)</li>
+    <li>Evaluation criteria</li>
+  </ul>
+  <h4>Steps to Create a PoC</h4>
+  <ol>
+    <li>Identify the need / customer pain point</li>
+    <li>Create a roadmap (timelines, resources, milestones)</li>
+    <li>Formulate hypotheses</li>
+    <li>Execute the PoC and collect data</li>
+    <li>Evaluate results against hypotheses</li>
+    <li>Document findings</li>
+    <li>Make recommendations (proceed / modify / abandon)</li>
+  </ol>
+
+  <h3 class="sub">5.2 Prototype Development</h3>
+  <div class="definition">
+    Prototype Development involves creating an early model or sample of a product to test design, functionality, and user experience before mass production.
+  </div>
+  <h4>Types of Prototypes</h4>
+  <table>
+    <tr><th>Type</th><th>Description</th></tr>
+    <tr><td>Low-Fidelity</td><td>Basic paper/cardboard representations; early visualisation, low investment.</td></tr>
+    <tr><td>High-Fidelity</td><td>Detailed, functional models resembling final production materials; realistic user testing.</td></tr>
+    <tr><td>Digital</td><td>Software-based simulations of user interaction without physical materials.</td></tr>
+  </table>
+  <h4>Significance</h4>
+  <ul>
+    <li>Validation of ideas</li>
+    <li>User testing (real-world functionality/design feedback)</li>
+    <li>Risk mitigation (catch flaws early)</li>
+    <li>Attracting investment</li>
+  </ul>
+  <h4>Stages of Prototype Development</h4>
+  <ol>
+    <li>Gathering and analysing requirements</li>
+    <li>Designing the prototype (sketches/wireframes)</li>
+    <li>Creating the prototype (3D printing, CNC, crafting)</li>
+    <li>Initial evaluation by users</li>
+    <li>Prototype refinement (iterative)</li>
+    <li>Final presentation to stakeholders</li>
+  </ol>
+  <h4>Best Practices</h4>
+  <ul>
+    <li>Iterative approach</li>
+    <li>User-centered design</li>
+    <li>Thorough documentation</li>
+    <li>Cross-functional collaboration</li>
+    <li>Prioritise functionality before aesthetics</li>
+  </ul>
+
+  <h2 class="section" id="u2-fin-feas">6. Financial Feasibility Analysis: Cost Estimation, Revenue Projection, Break-Even Analysis</h2>
+
+  <h3 class="sub">6.1 Initial Investment Assessment</h3>
+  <p>Determines whether anticipated returns justify the upfront outlay. Includes capital expenditures, working capital needs, and after-tax proceeds from disposed assets.</p>
+  <div class="formula">Initial Investment = CapEx + ΔWorking Capital − Disposal Proceeds (after tax)</div>
+  <div class="example">
+    <span class="ex-tag">Worked Example — Jane's Kitchen</span>
+    <p>New oven: $5,000 | Old oven sale: $1,500 | Working capital increase: $800</p>
+    <p>Initial Investment = 5,000 + 800 − 1,500 = <strong>$4,300</strong></p>
+  </div>
+
+  <h3 class="sub">6.2 Operating Costs Evaluation</h3>
+  <p>Combines Cost of Goods Sold (COGS) — direct materials, direct labour, manufacturing overhead — and Operating Expenses (OPEX) — rent, admin salaries, marketing, utilities, insurance, supplies.</p>
+  <div class="formula">Operating Costs = COGS + Operating Expenses</div>
+  <div class="example">
+    <span class="ex-tag">Worked Example — Sweet Treats Bakery</span>
+    <p>COGS = Flour($500)+Sugar($200)+Eggs($100)+Labour($1,000)+Utilities($150) = <strong>$1,950</strong></p>
+    <p>OPEX = Rent($1,200)+Salaries($800)+Marketing($300)+Supplies($100)+Insurance($200) = <strong>$2,600</strong></p>
+    <p>Total Operating Costs = 1,950 + 2,600 = <strong>$4,550</strong></p>
+  </div>
+
+  <h3 class="sub">6.3 Revenue Projections</h3>
+  <p>Estimates of future revenue essential for financial planning, budgeting, and attracting investors.</p>
+  <h4>Methods</h4>
+  <ul>
+    <li>Historical trend analysis</li>
+    <li>Customer and sales growth model</li>
+    <li>Bottom-up forecasting</li>
+    <li>Top-down forecasting</li>
+  </ul>
+  <div class="formula">Projected Revenue = (New Customers × Avg Sale Value) + (Existing Customers × Avg Sale Value × (1 − Churn Rate))</div>
+  <div class="example">
+    <span class="ex-tag">Worked Example — TechGadgets</span>
+    <p>New customers: 300 × $200 = $60,000</p>
+    <p>Existing customers: 1,000 × (1−0.10) = 900 × $200 = $180,000</p>
+    <p>Total Projected Revenue = 60,000 + 180,000 = <strong>$240,000</strong></p>
+  </div>
+
+  <h3 class="sub">6.4 Cash Flow Analysis</h3>
+  <table>
+    <tr><th>Type</th><th>Description</th></tr>
+    <tr><td>Operating (CFO)</td><td>Cash from core operations — sales revenue minus operating payments.</td></tr>
+    <tr><td>Investing (CFI)</td><td>Cash from buying/selling long-term assets.</td></tr>
+    <tr><td>Financing (CFF)</td><td>Cash from loans, share issues/buybacks, dividends.</td></tr>
+  </table>
+  <div class="example">
+    <span class="ex-tag">Worked Example — GreenTech</span>
+    <p>CFO = 500,000 − 300,000 − 150,000 = $50,000</p>
+    <p>CFI = 10,000 − 40,000 = −$30,000</p>
+    <p>CFF = 100,000 − 20,000 − 10,000 = $70,000</p>
+    <p>Net Cash Flow = 50,000 − 30,000 + 70,000 = <strong>$90,000</strong></p>
+  </div>
+
+  <h3 class="sub">6.5 Profitability Analysis</h3>
+  <table>
+    <tr><th>Ratio</th><th>Formula</th></tr>
+    <tr><td>Gross Profit Margin</td><td>(Gross Profit / Revenue) × 100</td></tr>
+    <tr><td>Operating Profit Margin</td><td>(Operating Profit / Revenue) × 100</td></tr>
+    <tr><td>Net Profit Margin</td><td>(Net Profit / Revenue) × 100</td></tr>
+    <tr><td>Return on Assets (ROA)</td><td>(Net Profit / Total Assets) × 100</td></tr>
+    <tr><td>Return on Equity (ROE)</td><td>(Net Profit / Total Equity) × 100</td></tr>
+  </table>
+  <div class="example">
+    <span class="ex-tag">Worked Example — EcoClean</span>
+    <p>Revenue $500,000, COGS $300,000, OPEX $100,000, Interest $10,000, Tax $20,000</p>
+    <p>Gross Profit Margin = 40% | Operating Profit Margin = 20% | Net Profit Margin = 14%</p>
+    <p>ROA = 17.5% (assets $400,000) | ROE = 28% (equity $250,000)</p>
+  </div>
+
+  <h3 class="sub">6.6 Break-Even Analysis</h3>
+  <div class="definition">
+    The break-even point (BEP) is where total revenue equals total costs — neither profit nor loss.
+  </div>
+  <p><strong>Key components:</strong> Fixed Costs (rent, salaries, insurance, depreciation), Variable Costs (raw materials, labour, shipping), Selling Price per Unit, Contribution Margin (Selling Price − Variable Cost per unit).</p>
+  <div class="formula">Break-even Point (units) = Fixed Costs ÷ (Selling Price per Unit − Variable Cost per Unit)</div>
+  <div class="example">
+    <span class="ex-tag">Worked Example — GadgetPro</span>
+    <p>Fixed Costs $50,000 | Variable Cost/unit $10 | Selling Price/unit $25</p>
+    <p>Contribution Margin = 25 − 10 = $15</p>
+    <p>Break-even = 50,000 ÷ 15 ≈ <strong>3,334 units</strong></p>
+  </div>
+  <div class="example">
+    <span class="ex-tag">Break-even Chart — EcoGadgets</span>
+    <p>Fixed Costs $30,000 | Variable Cost/unit $15 | Selling Price/unit $25</p>
+    <p>Break-even = 30,000 ÷ (25−15) = <strong>3,000 units</strong> = $75,000 revenue</p>
+    <p>The chart plots Total Revenue and Total Cost lines against units sold; their intersection marks the BEP — below it is a loss zone, above it is a profit zone.</p>
+  </div>
+
+  <h3 class="sub">6.7 Steps in Conducting Financial Feasibility Analysis</h3>
+  <ol>
+    <li>Define business objectives</li>
+    <li>Gather data (costs, market, competition, preferences)</li>
+    <li>Develop financial projections (income statement, cash flow, balance sheet — 3–5 years)</li>
+    <li>Analyze financial metrics (ROI, margins, break-even)</li>
+    <li>Review findings</li>
+    <li>Make recommendations</li>
+  </ol>
+
+  <h2 class="section" id="u2-bplan">7. Elements of a Business Plan</h2>
+
+  <h3 class="sub">7.1 Market</h3>
+  <ul>
+    <li><strong>Market Size and Trends</strong> — total potential market and growth prospects.</li>
+    <li><strong>Target Market</strong> — narrowed focus by geography/demographics/preferences.</li>
+    <li><strong>Feasible Market</strong> — portion realistically capturable given competition.</li>
+  </ul>
+  <p><strong>Market Share Projection</strong> uses demographic data/trends and conversion rates from the target market.</p>
+
+  <h3 class="sub">7.2 Positioning Your Business</h3>
+  <p>Answer: How are competitors positioning themselves? What unique features does your product offer? What customer needs does it address? A <strong>positioning statement</strong> summarises how you want customers/competitors to view your product.</p>
+
+  <h3 class="sub">7.3 Pricing</h3>
+  <ul>
+    <li>Cover all costs; adapt to demand/costs/competition; price to sell, not just to compete; review value continuously.</li>
+  </ul>
+  <table>
+    <tr><th>Method</th><th>Description</th></tr>
+    <tr><td>Cost-plus pricing</td><td>Add a profit margin to total costs.</td></tr>
+    <tr><td>Demand pricing</td><td>Set prices based on customer demand.</td></tr>
+    <tr><td>Competitive pricing</td><td>Match market prices for similar products.</td></tr>
+    <tr><td>Markup pricing</td><td>Retailers add a margin over product costs.</td></tr>
+  </table>
+
+  <h3 class="sub">7.4 Distribution</h3>
+  <p>Direct sales, OEM sales, manufacturer's reps, wholesale distributors, retail distributors, direct mail — chosen per industry, market size and competition.</p>
+
+  <h3 class="sub">7.5 Promotion Plan</h3>
+  <p>Advertising, packaging, public relations, sales promotions, personal sales.</p>
+
+  <h3 class="sub">7.6 Sales Potential</h3>
+  <div class="formula">Total Customers (T) × Average Revenue per Customer (A) = Sales (S)</div>
+
+  <h3 class="sub">7.7 Competitive Analysis</h3>
+  <p>Group competitors by how they compete and their strategies/motivations; build a <strong>Competitive Strength Grid</strong> listing key skills/assets against competitor strengths/weaknesses.</p>
+
+  <h3 class="sub">7.8 Design and Development Plan</h3>
+  <p>Covers product development, market development, organizational development. Includes scheduling (task number, duration, start/end dates) linked to the development budget.</p>
+  <h4>Development Budget Components</h4>
+  <ul>
+    <li>Materials, Direct Labor, Overhead, G&amp;A Costs, Marketing &amp; Sales, Professional Services, Miscellaneous Costs, Capital Equipment.</li>
+  </ul>
+
+  <h3 class="sub">7.9 Personnel &amp; Risk Assessment</h3>
+  <p>Identify staffing needs, create job descriptions, recruit, and integrate. Assess risks: technical issues, marketing challenges, staffing needs, financial concerns.</p>
+
+  <h3 class="sub">7.10 Operations &amp; Management</h3>
+  <p>Explains daily operations, management roles, department tasks, and financial needs (operating expenses, capital needs, cost of goods).</p>
+  <div class="formula">Personnel Needed (P) = Total Customers (C) ÷ Customers per Employee (S)</div>
+  <p><strong>Overhead expenses</strong> (travel, rent, advertising, utilities, payroll taxes, professional services, insurance) = number of employees × average expense per employee.</p>
+
+  <h3 class="sub">7.11 Financial Statements</h3>
+  <table>
+    <tr><th>Statement</th><th>Purpose</th></tr>
+    <tr><td>Income Statement</td><td>Income − COGS − Operating Expenses = Net Profit.</td></tr>
+    <tr><td>Cash Flow Statement</td><td>Tracks cash in vs. cash out.</td></tr>
+    <tr><td>Balance Sheet</td><td>Assets, Liabilities, and Equity at a point in time (annual).</td></tr>
+  </table>
+  <h4>Balance Sheet Breakdown</h4>
+  <ul>
+    <li><strong>Current Assets:</strong> cash, accounts receivable, inventory.</li>
+    <li><strong>Long-Term Assets:</strong> capital &amp; plant, investments, miscellaneous assets.</li>
+    <li><strong>Current Liabilities:</strong> accounts payable, accrued liabilities, taxes.</li>
+    <li><strong>Long-Term Liabilities:</strong> bonds payable, mortgage payable, notes payable.</li>
+    <li><strong>Equity:</strong> Total Assets − Total Liabilities.</li>
+  </ul>
+
+  <h3 class="sub">7.12 Business Plan Overview &amp; Importance</h3>
+  <p>A business plan is a written document explaining a business idea and its implementation — combining finance, marketing, production, and HR plans. It serves entrepreneurs (goals/strategy), investors/bankers (viability), and employees/stakeholders (vision).</p>
+  <div class="keypoint">
+    <strong>Three perspectives:</strong> Entrepreneur's (concept), Marketing (needs/strategies), Investor's (profitability/growth).
+  </div>
+  <h4>Benefits of Writing a Business Plan</h4>
+  <ul>
+    <li>Set objectives</li>
+    <li>Plan workforce</li>
+    <li>Start new business systematically</li>
+    <li>Build credibility</li>
+    <li>Create awareness</li>
+  </ul>
+  <h4>Common Mistakes to Avoid</h4>
+  <ul>
+    <li>Submitting unpolished drafts</li>
+    <li>Using outdated financial data</li>
+    <li>Making unsupported assumptions</li>
+    <li>Ignoring potential risks</li>
+    <li>Lacking understanding of financials</li>
+    <li>Overlooking external market influences</li>
+    <li>Failing to show personal investment</li>
+    <li>Refusing to guarantee loans personally</li>
+    <li>Starting with unrealistic loan demands</li>
+    <li>Overemphasizing collateral instead of cash flow</li>
+  </ul>
+
+  <h2 class="section" id="u2-strategy">8. Strategic Planning</h2>
+  <p>The term "strategy" originates from the military. Peter Drucker (1955) emphasised strategic decisions about business goals and how to achieve them. Alfred Chandler and Michael Porter developed the "Classical Approach," focusing on formal long-term plans. Modern thinking increasingly emphasises human behaviour and qualitative aspects.</p>
+
+  <h3 class="sub">What is Strategic Planning?</h3>
+  <p>The process of setting long-term goals and deciding how to achieve them — asking what we're doing now, whether to change approach, and how external changes affect readiness.</p>
+  <h4>Key Features</h4>
+  <ul>
+    <li>Questioning (where are we, where do we want to go)</li>
+    <li>Long-term focus</li>
+    <li>Continuous process</li>
+    <li>Resource allocation to priority areas</li>
+    <li>Coordination of internal resources with external opportunities</li>
+  </ul>
+  <h4>Benefits</h4>
+  <ul>
+    <li>Financial benefits (sales, profits, cost management)</li>
+    <li>Guidance for activities</li>
+    <li>Competitive advantage</li>
+    <li>Risk reduction</li>
+    <li>Motivation and innovation</li>
+    <li>Efficient resource use</li>
+  </ul>
+  <h4>Challenges</h4>
+  <ul>
+    <li>Dealing with rapid change</li>
+    <li>Lack of accurate information</li>
+    <li>Inflexibility of rigid plans</li>
+    <li>Time and cost of planning</li>
+  </ul>
+
+  <h3 class="sub">Planning vs. Strategy</h3>
+  <table>
+    <tr><th>Planning</th><th>Strategy</th></tr>
+    <tr><td>How to achieve tasks — detailed, operational</td><td>What goals to achieve and why — broader, long-term</td></tr>
+  </table>
+
+  <h3 class="sub">Levels of Strategy</h3>
+  <ol>
+    <li><strong>Corporate Strategy</strong> — overall direction and markets to focus on.</li>
+    <li><strong>Business Strategy</strong> — tactics for specific markets/business units.</li>
+    <li><strong>Functional Strategy</strong> — day-to-day operations supporting business goals.</li>
+  </ol>
+
+  <p><strong>Environmental Scanning</strong> analyses external factors (market trends, competition, demographics); <strong>Competitive Analysis</strong> evaluates competitors' strengths/weaknesses to position effectively.</p>
+
+  <h2 class="section" id="u2-swoc">9. Vision, Mission, Goals, Objectives, and SWOC Analysis</h2>
+
+  <table>
+    <tr><th>Element</th><th>Purpose</th><th>Example</th></tr>
+    <tr><td><strong>Vision</strong></td><td>Long-term aspiration — "Where do we want to be?"</td><td>"To be the leading provider of sustainable energy solutions worldwide."</td></tr>
+    <tr><td><strong>Mission</strong></td><td>Present purpose — why the company exists</td><td>"We provide affordable, renewable energy through innovation and sustainable practices."</td></tr>
+    <tr><td><strong>Goals</strong></td><td>Broad, long-term aims (3–5+ yrs)</td><td>"Expand market share in renewable energy by 30% in 5 years."</td></tr>
+    <tr><td><strong>Objectives</strong></td><td>Specific, measurable, SMART, short-term steps</td><td>"Launch 5 new renewable energy products in 12 months."</td></tr>
+  </table>
+
+  <h3 class="sub">SWOC Analysis</h3>
+  <table>
+    <tr><th>Factor</th><th>Nature</th><th>Example</th></tr>
+    <tr><td>Strengths</td><td>Internal advantage</td><td>Strong brand, innovative products, skilled workforce</td></tr>
+    <tr><td>Weaknesses</td><td>Internal limitation</td><td>Limited finances, poor service, outdated technology</td></tr>
+    <tr><td>Opportunities</td><td>External trend to exploit</td><td>Rising demand for renewable energy, government subsidies</td></tr>
+    <tr><td>Challenges/Threats</td><td>External risk</td><td>Intense competition, regulation, economic downturns</td></tr>
+  </table>
+  <p>SWOC supports strategic decision-making, competitive advantage, and proactive risk management.</p>
+
+  <h2 class="section" id="u2-porter">10. Porter's Generic Strategies</h2>
+  <p>A firm's relative industry position determines whether profitability is above or below average — sustainable competitive advantage is the fundamental basis. Two basic types of advantage: <strong>low cost</strong> or <strong>differentiation</strong>, combined with scope of activities, yield three generic strategies.</p>
+  <table>
+    <tr><th>Strategy</th><th>Goal</th><th>Example Companies</th></tr>
+    <tr><td><strong>Differentiation</strong></td><td>Be unique via advertising, features, quality, service, or technology; supports customer loyalty and premium pricing.</td><td>Apple, Harley-Davidson, Nespresso, LEGO, Nike, Starbucks</td></tr>
+    <tr><td><strong>Cost Leadership</strong></td><td>Be the low-cost producer via scale, efficiency, tight cost control; sell standard no-frills products.</td><td>Southwest Airlines, Walmart, McDonald's, EasyJet, Costco, Amazon</td></tr>
+    <tr><td><strong>Focus</strong> (Cost Focus / Differentiation Focus)</td><td>Concentrate on a narrow niche/segment rather than the whole industry.</td><td>Differentiation focus: Rolls Royce, Omega, Prada, Razer. Cost focus: Claire's, Home Depot.</td></tr>
+  </table>
+
+  <h2 class="section" id="u2-growth">11. Growth Strategies</h2>
+  <p>A growth strategy is a plan to expand a specific business dimension — revenue, customer count, product line.</p>
+  <table>
+    <tr><th>Strategy</th><th>Description</th></tr>
+    <tr><td><strong>Organic Growth</strong></td><td>Expansion via internal resources (e.g., production efficiency); avoids debt, self-sufficient, funds future strategic growth.</td></tr>
+    <tr><td><strong>Mergers &amp; Acquisitions</strong></td><td>Riskier but high-reward; combining companies via purchase/absorption, merger into a new entity, or asset acquisition.</td></tr>
+    <tr><td><strong>Strategic Alliances</strong></td><td>Mutually beneficial arrangement between companies retaining independence; expands markets/products, may involve more than two companies.</td></tr>
+  </table>
+
+  <h2 class="section" id="u2-writing">12. Writing a Business Plan (Template Structure)</h2>
+  <p>A business plan is a blueprint answering <em>what, when, how,</em> and <em>who</em> — prepared by the entrepreneur with professional advisors (lawyers, accountants, engineers, marketers).</p>
+  <ol>
+    <li><strong>Title Page</strong> — legal name, address, contact, date, logo.</li>
+    <li><strong>Executive Summary</strong> — summary of the entire plan; written last; max 2 pages.</li>
+    <li><strong>Industry Overview</strong> — competitors, industry trends, estimated revenues, market position.</li>
+    <li><strong>Market Analysis and Competition</strong> — target market demographics, geography, behaviour, needs; can merge with competition analysis.</li>
+    <li><strong>Sales and Marketing Plan</strong> — USP, sales channels, advertising, pricing, distribution, after-sales support.</li>
+    <li><strong>Management Plan</strong> — legal structure, management team, HR needs, external professionals, advisory board.</li>
+    <li><strong>Operating Plan</strong> — physical requirements: office space, machinery, labour, supplies, inventory, raw materials/supply chain.</li>
+    <li><strong>Financial Plan</strong> — projected income statement, balance sheet, cash flow; often decisive for funding.</li>
+    <li><strong>Appendices and Exhibits</strong> — building plans, detailed research, marketing brochures, promoter credit histories.</li>
+  </ol>
+
+  <h2 class="section" id="u2-model">13. Developing Business Models and Prototypes Based on Generated Ideas</h2>
+  <div class="definition">
+    A business model is a company's plan for making profit — identifying products/services, target market, and anticipated expenses.
+  </div>
+  <p>A primary component is the <strong>value proposition</strong> — a description of goods/services and why they are desirable, differentiated from competitors. New-venture business models also cover startup costs, financing sources, target customers, marketing strategy, competitive review, and revenue/expense projections.</p>
+
+  <h3 class="sub">Steps to Build a Business Model</h3>
+  <ol>
+    <li><strong>Conduct Market Research &amp; Analysis</strong> — explore customer behaviours, preferences, competitor strategies, industry trends to find gaps.</li>
+    <li><strong>Define Your Value Proposition</strong> — the unique selling point addressing customer needs/pain points; aids acquisition and retention.</li>
+    <li><strong>Choose Your Revenue Model</strong> — subscription, transactional, advertising, licensing, or freemium; assessed against target market and competitive dynamics.</li>
+    <li><strong>Design Your Distribution Channels</strong> — direct sales, online platforms, retail partnerships, distribution networks; balance cost-effectiveness with customer satisfaction; invest in logistics/fulfillment.</li>
+    <li><strong>Build Strategic Partnerships</strong> — joint ventures, alliances, licensing agreements, supplier relationships to access new markets/technology/resources.</li>
+    <li><strong>Foster Innovation and Adaptability</strong> — encourage creativity, experimentation, and risk-taking to remain future-proof; may involve product, process, business-model, or technology innovation.</li>
+  </ol>
+
+  <hr class="divider">
+
+  <!-- ============================================================ -->
+  <!-- UNIT III -->
+  <!-- ============================================================ -->
+
+  <div class="unit-title">
+    <div class="tag">Unit III</div>
+    <h1>Entrepreneurial Marketing and Sales; Entrepreneurial Finance and Resource Management</h1>
+    <p>4Ps, STP, branding, digital marketing, sources of financing, HRM, financial management, risk management, and legal/ethical issues.</p>
+  </div>
+
+  <div class="toc-box">
+    <h3>Unit III Topics</h3>
+    <ul>
+      <li><a href="#u3-intro">Entrepreneurial Marketing and Sales — Overview</a></li>
+      <li><a href="#u3-4ps">Basics of Marketing: The 4Ps</a></li>
+      <li><a href="#u3-4ps-case">Case Studies on the 4Ps (Global &amp; Indian Startups)</a></li>
+      <li><a href="#u3-stp">Market Segmentation, Targeting, Positioning (STP)</a></li>
+      <li><a href="#u3-brand">Branding and Product Development Strategies</a></li>
+      <li><a href="#u3-uvp">Creating a Unique Value Proposition (UVP)</a></li>
+      <li><a href="#u3-digital">Digital Marketing</a></li>
+      <li><a href="#u3-finance">Entrepreneurial Finance and Resource Management</a></li>
+      <li><a href="#u3-sources">Sources of Financing (Equity, Debt, VC, Angel, Crowdfunding)</a></li>
+      <li><a href="#u3-hrm">Human Resource Management (HRM)</a></li>
+      <li><a href="#u3-finman">Financial Management</a></li>
+      <li><a href="#u3-budget">Budgeting</a></li>
+      <li><a href="#u3-cashflow">Cash Flow Management</a></li>
+      <li><a href="#u3-fsa">Financial Statement Analysis</a></li>
+      <li><a href="#u3-risk">Risk Management and Insurance</a></li>
+      <li><a href="#u3-legal">Legal and Ethical Issues: IPR, Contracts, Corporate Governance</a></li>
+    </ul>
+  </div>
+
+  <h2 class="section" id="u3-intro">1. Entrepreneurial Marketing and Sales — Overview</h2>
+  <p>Combines traditional marketing/sales principles with the agility, creativity, and risk-taking of entrepreneurial ventures — especially relevant where resources are limited but innovation is critical.</p>
+  <ul>
+    <li><strong>Entrepreneurial Marketing:</strong> non-traditional methods, customer-centric, guerrilla tactics, social media, word-of-mouth, rapid testing, flexible planning.</li>
+    <li><strong>Sales in an Entrepreneurial Context:</strong> relationship-building, direct engagement, often founder-led early on, iterative and feedback-driven.</li>
+  </ul>
+  <h3 class="sub">Core Principles</h3>
+  <ul>
+    <li>Innovation and Agility — pivoting based on insights/trends</li>
+    <li>Customer-Centric Focus</li>
+    <li>Resourcefulness — low-cost, high-impact strategies</li>
+    <li>Growth Orientation</li>
+    <li>Experimentation and Learning</li>
+  </ul>
+
+  <h2 class="section" id="u3-4ps">2. Basics of Marketing: The 4Ps (Product, Price, Place, Promotion)</h2>
+  <p>The marketing mix elements must be aligned and integrated — a premium-priced product needs high-quality promotion and selective distribution.</p>
+
+  <h3 class="sub">2.1 Product &amp; Product Lifecycle (PLC)</h3>
+  <table>
+    <tr><th>Stage</th><th>Characteristics</th></tr>
+    <tr><td><strong>Introduction</strong></td><td>New/unknown; high costs, low sales; limited distribution; targets early adopters.</td></tr>
+    <tr><td><strong>Growth</strong></td><td>Rising sales/profit; expanding distribution; emerging competition; brand differentiation needed.</td></tr>
+    <tr><td><strong>Maturity</strong></td><td>Sales plateau; intense competition; focus shifts to retention; price pressure.</td></tr>
+    <tr><td><strong>Decline</strong></td><td>Falling sales; reduced interest; planning for phase-out.</td></tr>
+  </table>
+
+  <h3 class="sub">2.2 Price</h3>
+  <table>
+    <tr><th>Pricing Strategy</th><th>Description</th></tr>
+    <tr><td>Cost-Plus Pricing</td><td>Add margin to production cost.</td></tr>
+    <tr><td>Value-Based Pricing</td><td>Based on perceived customer value.</td></tr>
+    <tr><td>Competitive Pricing</td><td>Matching/beating competitors.</td></tr>
+    <tr><td>Psychological Pricing</td><td>E.g., $9.99 instead of $10.</td></tr>
+    <tr><td>Dynamic Pricing</td><td>Adjust based on demand/competition (travel, e-commerce).</td></tr>
+  </table>
+
+  <h3 class="sub">2.3 Place (Distribution)</h3>
+  <ul>
+    <li><strong>Direct Channels:</strong> company website, physical stores.</li>
+    <li><strong>Indirect Channels:</strong> wholesalers, distributors, retailers.</li>
+    <li><strong>Hybrid Channels:</strong> mix of both.</li>
+  </ul>
+  <p>Also involves supply chain management and location/coverage decisions based on target audience.</p>
+
+  <h3 class="sub">2.4 Promotion</h3>
+  <table>
+    <tr><th>Tool</th><th>Description</th></tr>
+    <tr><td>Advertising</td><td>Paid messaging across broad media.</td></tr>
+    <tr><td>Sales Promotions</td><td>Discounts, coupons, contests.</td></tr>
+    <tr><td>Public Relations</td><td>Managing brand image and media relations.</td></tr>
+    <tr><td>Personal Selling</td><td>Direct interaction, common in B2B/high-value goods.</td></tr>
+    <tr><td>Direct Marketing</td><td>Email, social media, mobile messaging.</td></tr>
+    <tr><td>Digital Marketing</td><td>Social media, SEO/SEM, content marketing, influencers.</td></tr>
+  </table>
+  <p><strong>Push Strategy</strong> — encourage intermediaries to promote the product. <strong>Pull Strategy</strong> — target consumers directly to create demand that pulls retailers to stock it.</p>
+
+  <h2 class="section" id="u3-4ps-case">3. Case Studies on the 4Ps</h2>
+
+  <h3 class="sub">Global Companies</h3>
+  <div class="case"><span class="case-tag">Product</span><strong>Apple iPhone</strong> — Premium design, continuous innovation, and quality set industry standards, enabling premium pricing and brand loyalty.</div>
+  <div class="case"><span class="case-tag">Price</span><strong>Walmart</strong> — Everyday low pricing via economies of scale and supplier negotiation captures a wide low/middle-income audience.</div>
+  <div class="case"><span class="case-tag">Place</span><strong>Starbucks</strong> — High-traffic urban locations plus mobile ordering/delivery partnerships maximise convenience and accessibility.</div>
+  <div class="case"><span class="case-tag">Promotion</span><strong>Coca-Cola</strong> — Emotional branding (happiness, togetherness) and consistent global campaigns build strong loyalty.</div>
+
+  <h3 class="sub">Indian Startups</h3>
+  <div class="case"><span class="case-tag">Product</span><strong>boAt</strong> — High-quality, stylish, durable audio products tailored to Indian consumers (sweat resistance, rugged design); became a leader in India's earwear market.</div>
+  <div class="case"><span class="case-tag">Price</span><strong>Jio</strong> — Ultra-affordable "penetration pricing" (free calls, cheap data) gained 100M+ subscribers in six months and reshaped the telecom industry.</div>
+  <div class="case"><span class="case-tag">Place</span><strong>Flipkart</strong> — Expanded logistics/warehousing to Tier II/III cities and rural areas, becoming a household e-commerce name.</div>
+  <div class="case"><span class="case-tag">Promotion</span><strong>Zomato</strong> — Humorous, relatable social media campaigns plus discounts/loyalty programs built a strong market share in food-tech.</div>
+
+  <h2 class="section" id="u3-stp">4. Market Segmentation, Targeting, and Positioning (STP)</h2>
+  <p>STP helps businesses identify and reach their most valuable customers, maximising marketing efficiency.</p>
+  <table>
+    <tr><th>Component</th><th>Meaning</th></tr>
+    <tr><td>Segmentation</td><td>Dividing a broad market into smaller groups with similar needs.</td></tr>
+    <tr><td>Targeting</td><td>Selecting one or more segments to focus on.</td></tr>
+    <tr><td>Positioning</td><td>Crafting a distinct image/value proposition in target segments' minds.</td></tr>
+  </table>
+  <div class="example">
+    <span class="ex-tag">Putting STP Together — Clothing Brand</span>
+    <p>Segment: sports enthusiasts, casual wearers, eco-conscious consumers → Target: eco-conscious consumers → Position: environmentally friendly, sustainable materials, production transparency.</p>
+  </div>
+
+  <h3 class="sub">4.1 Bases of Segmentation</h3>
+  <table>
+    <tr><th>Type</th><th>Criteria</th><th>Example</th></tr>
+    <tr><td>Geographic</td><td>Country, region, city, climate, urban/rural</td><td>Clothing suited to tropical vs. cold climates</td></tr>
+    <tr><td>Demographic</td><td>Age, gender, income, education, occupation, family size</td><td>Age-appropriate toys</td></tr>
+    <tr><td>Psychographic</td><td>Lifestyle, personality, values, interests</td><td>Fitness brand targeting health-conscious individuals</td></tr>
+    <tr><td>Behavioural</td><td>User status, usage rate, loyalty, benefits sought</td><td>Software segmented by usage frequency/features</td></tr>
+  </table>
+  <p><strong>Methods:</strong> Qualitative (focus groups, interviews, observation) and Quantitative (surveys, statistical analysis).</p>
+  <p><strong>Examples:</strong> Coca-Cola segments by age/lifestyle/occasion (Coke Zero vs. Classic); Nike uses psychographic/behavioural segmentation for athletes.</p>
+
+  <h3 class="sub">4.2 Targeting</h3>
+  <h4>Criteria for Selecting Target Markets</h4>
+  <ul>
+    <li>Segment size and growth (large/growing vs. niche)</li>
+    <li>Structural attractiveness (competitive intensity, profitability)</li>
+    <li>Company objectives and resources</li>
+    <li>Segment compatibility (brand fit, accessibility)</li>
+  </ul>
+  <table>
+    <tr><th>Strategy</th><th>Description</th><th>Example</th></tr>
+    <tr><td>Undifferentiated (Mass)</td><td>Single strategy for entire market</td><td>Salt, sugar</td></tr>
+    <tr><td>Differentiated (Segmented)</td><td>Tailored strategies per segment</td><td>Auto manufacturers with family/luxury/commercial models</td></tr>
+    <tr><td>Concentrated (Niche)</td><td>Focus on a single segment</td><td>Vegan skincare specialist</td></tr>
+    <tr><td>Micromarketing</td><td>Personalised to individuals/local segments</td><td>Customised online ads by behaviour</td></tr>
+  </table>
+  <p><strong>Examples:</strong> Tesla (luxury EV segment), Dollar Shave Club (cost-conscious, subscription convenience).</p>
+
+  <h3 class="sub">4.3 Positioning</h3>
+  <table>
+    <tr><th>Strategy</th><th>Example</th></tr>
+    <tr><td>Product Attributes</td><td>Volvo — safety</td></tr>
+    <tr><td>Benefits</td><td>Patagonia — durability</td></tr>
+    <tr><td>Usage Occasions</td><td>Gatorade — athletic use</td></tr>
+    <tr><td>User Positioning</td><td>Harley-Davidson — freedom/adventure</td></tr>
+    <tr><td>Against Competitors</td><td>Pepsi vs. Coca-Cola</td></tr>
+    <tr><td>Quality or Value</td><td>Rolex (premium) vs. IKEA (value)</td></tr>
+  </table>
+  <p>A <strong>positioning statement</strong> defines target audience, offer, and uniqueness (e.g., Apple MacBook for tech-savvy professionals).</p>
+  <p><strong>Positioning maps</strong> are visual tools plotting brands on key attributes (e.g., price vs. functionality) to reveal market gaps.</p>
+
+  <h3 class="sub">4.4 STP Case Study — Starbucks</h3>
+  <div class="case">
+    <strong>Segmentation:</strong> urban high-traffic areas; young professionals/students; premium-coffee lifestyle values; frequent consumers.<br>
+    <strong>Targeting:</strong> young urban professionals seeking a "third place" between home and work.<br>
+    <strong>Positioning:</strong> premium coffee brand with consistent, comfortable global experience.<br>
+    <strong>Marketing Mix:</strong> wide product range, premium pricing, strategic urban locations, loyalty/community-driven promotion.
+  </div>
+
+  <h3 class="sub">4.5 STP Case Study — Maruti Suzuki</h3>
+  <div class="case">
+    Segmented by income/usage/lifestyle (Alto for price-sensitive, Swift for urban families, Baleno/Ciaz for professionals, Vitara Brezza for adventure buyers). Differentiated targeting across these groups. Positioned as reliable, fuel-efficient, affordable with a vast service network — retaining mass-market dominance while competing in premium segments.
+  </div>
+
+  <h3 class="sub">4.6 STP Case Study — Hindustan Unilever (HUL)</h3>
+  <div class="case">
+    Segmented by demographics, psychographics, geography. Multi-segment targeting: Lux/Dove (premium skincare), Lifebuoy (affordable hygiene), Wheel (low-income laundry), Fair &amp; Lovely (skincare/fairness). Each brand uniquely positioned (Dove = gentle premium skincare; Lifebuoy = trusted germ protection; Surf Excel = "dirt is good"). Result: market leadership across urban and rural India.
+  </div>
+
+  <h2 class="section" id="u3-brand">5. Branding and Product Development Strategies</h2>
+
+  <h3 class="sub">5.1 Key Elements of Branding</h3>
+  <table>
+    <tr><th>Element</th><th>Description</th><th>Example</th></tr>
+    <tr><td>Brand Identity</td><td>Name, logo, colours, tagline, tone of voice</td><td>Nike's swoosh + "Just Do It"</td></tr>
+    <tr><td>Brand Positioning</td><td>Place occupied in customers' minds vs. competitors</td><td>Tesla — premium, innovative, sustainable</td></tr>
+    <tr><td>Brand Equity</td><td>Perceived value adding price premium/loyalty</td><td>Apple's premium pricing power</td></tr>
+  </table>
+  <h4>Branding Strategies</h4>
+  <ul>
+    <li><strong>Differentiation</strong> — unique quality/innovation/service.</li>
+    <li><strong>Brand Extension</strong> — leveraging an established name into new categories.</li>
+    <li><strong>Rebranding</strong> — revitalising identity (e.g., Old Spice's shift to a quirky modern brand for younger audiences).</li>
+  </ul>
+
+  <h3 class="sub">5.2 Stages of Product Development</h3>
+  <ol>
+    <li><strong>Idea Generation</strong> — brainstorming, customer feedback, competitive/market research.</li>
+    <li><strong>Concept Development and Screening</strong> — evaluate feasibility, profitability, brand alignment.</li>
+    <li><strong>Product Design and Prototyping</strong> — visualise and test via a prototype/initial model.</li>
+    <li><strong>Testing and Validation</strong> — beta testing, market trials, feedback loops.</li>
+    <li><strong>Commercialization and Launch</strong> — marketing plan, distribution, pricing, timing.</li>
+  </ol>
+
+  <h3 class="sub">5.3 Integrating Branding &amp; Product Development</h3>
+  <ul>
+    <li>Create a Unique Value Proposition</li>
+    <li>Strengthen market positioning</li>
+    <li>Adapt to market trends</li>
+  </ul>
+  <div class="case">
+    <strong>Coca-Cola Example:</strong> Brand identity centred on happiness/togetherness/refreshment; product development adapts flavours regionally and via limited editions — sustaining global appeal with consistent identity.
+  </div>
+
+  <h2 class="section" id="u3-uvp">6. Creating a Unique Value Proposition (UVP)</h2>
+  <div class="definition">
+    A UVP clearly communicates what makes a product distinctively valuable — why customers should choose it over competitors.
+  </div>
+  <h3 class="sub">Components of a UVP</h3>
+  <ul>
+    <li><strong>Target Audience</strong> — demographics, psychographics, needs, behaviours.</li>
+    <li><strong>Unique Benefit</strong> — the standout advantage.</li>
+    <li><strong>Value Delivery</strong> — "What's in it for me?"</li>
+    <li><strong>Proof of Value</strong> — testimonials, reviews, case studies.</li>
+  </ul>
+  <p><strong>Example:</strong> Zoom's UVP during COVID-19 — "bringing people together, anytime, anywhere," emphasising reliability, ease of use, universal access.</p>
+
+  <h3 class="sub">Steps to Crafting a UVP</h3>
+  <ol>
+    <li>Understand target market and needs</li>
+    <li>Analyse competitors and differentiate</li>
+    <li>Define the core benefit</li>
+    <li>Make it clear and concise</li>
+  </ol>
+
+  <h3 class="sub">Common UVP Formats</h3>
+  <table>
+    <tr><th>Format</th><th>Example</th></tr>
+    <tr><td>Slogan</td><td>Nike — "Just Do It"</td></tr>
+    <tr><td>Statement</td><td>Dollar Shave Club — "A great shave for a few bucks a month"</td></tr>
+    <tr><td>Headline + Supporting Points</td><td>Spotify — "Music for everyone"</td></tr>
+  </table>
+  <p><strong>More examples:</strong> Airbnb — "Belong Anywhere"; Amazon Prime — "Fast, FREE delivery on over 100 million items"; Trello — "Trello helps teams move work forward."</p>
+
+  <h2 class="section" id="u3-digital">7. Digital Marketing</h2>
+  <table>
+    <tr><th>Component</th><th>Description</th></tr>
+    <tr><td>SEO</td><td>Improves visibility on search results via keywords/on-page/technical optimisation to drive organic traffic.</td></tr>
+    <tr><td>Content Marketing</td><td>Blogs, videos, infographics building trust, authority, and nurturing relationships.</td></tr>
+    <tr><td>Social Media Marketing</td><td>Engagement on Facebook, Instagram, LinkedIn; converts followers into loyal customers.</td></tr>
+    <tr><td>Email Marketing</td><td>Personalised newsletters, automated campaigns, list segmentation.</td></tr>
+    <tr><td>PPC Advertising</td><td>Paid ad placements; pay only on click; targeted, immediate traffic.</td></tr>
+    <tr><td>Affiliate Marketing</td><td>Partners earn commission for promoting products; broad low-cost reach.</td></tr>
+    <tr><td>Influencer Marketing</td><td>Leverages social media personalities' reach and credibility.</td></tr>
+    <tr><td>Mobile Marketing</td><td>SMS, apps, push notifications for real-time engagement.</td></tr>
+    <tr><td>Analytics &amp; Data Measurement</td><td>Tracks conversion rate, CTR, ROI (e.g., Google Analytics) for data-driven optimisation.</td></tr>
+  </table>
+
+  <h3 class="sub">Benefits of Digital Marketing</h3>
+  <ul>
+    <li>Global reach at lower cost than traditional marketing</li>
+    <li>Highly targeted, measurable advertising</li>
+    <li>Real-time performance monitoring and optimisation</li>
+    <li>Two-way interaction fostering loyalty</li>
+  </ul>
+
+  <h3 class="sub">Case Studies — Indian Companies Using Digital Marketing</h3>
+  <div class="case"><span class="case-tag">Amul</span>Witty, topical cartoons ("Amul Girl") on social media keep the brand relevant and viral, reinforcing loyalty across age groups.</div>
+  <div class="case"><span class="case-tag">Zomato</span>Meme marketing and relatable Instagram/Twitter content plus personalised push notifications/email drove high engagement and rapid user acquisition.</div>
+  <div class="case"><span class="case-tag">Nykaa</span>"Nykaa TV" content marketing and beauty-influencer collaborations established category authority and broadened reach.</div>
+  <div class="case"><span class="case-tag">Flipkart</span>Data-driven, programmatic advertising and large-scale "Big Billion Days" campaigns drove record sales and repeat purchases.</div>
+  <div class="case"><span class="case-tag">Swiggy</span>Personalised recommendations and promotions via email/SMS/in-app notifications, plus humorous social content, improved retention and order frequency.</div>
+  <div class="case"><span class="case-tag">Cadbury Dairy Milk</span>Hyperlocal "Not Just a Cadbury Ad" campaign personalised ads for local stores during COVID-19, strengthening brand image as socially responsible.</div>
+
+  <h2 class="section" id="u3-finance">8. Entrepreneurial Finance and Resource Management — Overview</h2>
+  <p>Involves strategies, tools, and practices entrepreneurs use to secure capital for starting, sustaining, and growing a business — critical for product development, marketing, operations, and expansion.</p>
+  <div class="keypoint">
+    Options range from personal savings ("bootstrapping") and friends/family funding, to angel investors, venture capital, bank loans, government grants/subsidies (e.g., India's Start-up India), crowdfunding, trade credit, IPOs, and retained earnings.
+  </div>
+
+  <h2 class="section" id="u3-sources">9. Sources of Financing</h2>
+
+  <h3 class="sub">9.1 Equity Financing</h3>
+  <p>Raising capital by selling ownership shares; no repayment/interest obligation; investors share risk/reward.</p>
+  <table>
+    <tr><th>Advantages</th><th>Disadvantages</th></tr>
+    <tr><td>No repayment/interest; shared risk; investor expertise/network</td><td>Dilution of control/ownership; investor say in decisions; profit-sharing</td></tr>
+  </table>
+
+  <h3 class="sub">9.2 Debt Financing</h3>
+  <p>Borrowing with obligation to repay principal + interest; retains full ownership/control.</p>
+  <table>
+    <tr><th>Advantages</th><th>Disadvantages</th></tr>
+    <tr><td>Retained control; predictable repayment; interest may be tax-deductible</td><td>Regular repayments strain cash flow; default risk; collateral/guarantees required</td></tr>
+  </table>
+
+  <h3 class="sub">9.3 Venture Capital (VC)</h3>
+  <p>Private equity for early-stage, high-growth companies with scalable models; funded in rounds (Seed, Series A, B...).</p>
+  <table>
+    <tr><th>Advantages</th><th>Disadvantages</th></tr>
+    <tr><td>Large capital; mentorship/networks; rapid expansion potential</td><td>Loss of control; significant equity dilution; pressure for fast growth</td></tr>
+  </table>
+
+  <h3 class="sub">9.4 Angel Investors</h3>
+  <p>Wealthy individuals investing personal money in early-stage ventures, often more flexible than VCs, providing mentorship and networks.</p>
+  <table>
+    <tr><th>Advantages</th><th>Disadvantages</th></tr>
+    <tr><td>Funding access when other sources unavailable; expertise/mentoring; flexible terms</td><td>Ownership dilution; finding the right fit is hard; some expect high involvement</td></tr>
+  </table>
+
+  <h3 class="sub">9.5 Crowdfunding</h3>
+  <p>Gathering small amounts from many people via platforms (Kickstarter, Indiegogo, GoFundMe) in exchange for rewards, early access, or equity.</p>
+  <table>
+    <tr><th>Advantages</th><th>Disadvantages</th></tr>
+    <tr><td>No equity/debt required; validates market interest; builds early community</td><td>Time/effort-intensive marketing; may require significant rewards/equity; failure harms reputation</td></tr>
+  </table>
+
+  <h3 class="sub">9.6 Financing Case Studies (Indian Startups)</h3>
+  <div class="case"><span class="case-tag">Venture Capital</span><strong>Ola Cabs</strong> — Multiple VC rounds (Sequoia, Tiger Global, SoftBank) enabled rapid scaling to 250+ cities and $7B+ valuation, though with heavy equity dilution and growth pressure.</div>
+  <div class="case"><span class="case-tag">Angel + VC</span><strong>Zomato</strong> — Early angel funding, then VC rounds (Sequoia, A91 Partners, Temasek) including a $60M Series F (2014), enabling expansion to 20+ countries.</div>
+  <div class="case"><span class="case-tag">Equity Financing</span><strong>Bira 91</strong> — Raised $1.5M from Sequoia India (2016) in exchange for equity, expanding production/distribution while retaining independence.</div>
+  <div class="case"><span class="case-tag">Private Equity/VC</span><strong>Dream11</strong> — Raised via Kalaari Capital, Saama Capital; $100M Series D (2018, Tiger Global) and $225M (2020) — became India's first fantasy sports unicorn at $2.5B valuation.</div>
+  <div class="case"><span class="case-tag">Crowdfunding</span><strong>Ketto</strong> — India's largest crowdfunding platform; raised funds for its own operations and thousands of causes/projects via traditional and crowdfunded channels.</div>
+
+  <h2 class="section" id="u3-hrm">10. Human Resource Management (HRM)</h2>
+  <p>HRM manages an organisation's people through recruitment, selection, training, development, performance management, compensation, and employee relations — ensuring the right people are in the right roles.</p>
+
+  <h3 class="sub">10.1 Recruitment in Entrepreneurship</h3>
+  <table>
+    <tr><th>Type</th><th>Description</th></tr>
+    <tr><td>Internal Recruitment</td><td>Filling roles with existing employees — quicker, cheaper, motivating.</td></tr>
+    <tr><td>External Recruitment</td><td>Seeking outside candidates — fresh ideas/skills, but slower/costlier.</td></tr>
+  </table>
+  <p><strong>Methods:</strong> job portals (LinkedIn, Indeed, Naukri), campus recruitment, social media, employee referrals.</p>
+  <p><strong>Challenges:</strong> budget constraints, finding versatile early-stage hires.</p>
+  <p><strong>Best practices:</strong> clear job descriptions, diverse sourcing, thorough screening.</p>
+
+  <h3 class="sub">10.2 Training in Entrepreneurship</h3>
+  <table>
+    <tr><th>Type</th><th>Description</th></tr>
+    <tr><td>On-the-Job</td><td>Learning while doing, mentored — cost-effective for small businesses.</td></tr>
+    <tr><td>Off-the-Job</td><td>External courses/workshops — technical/leadership skills.</td></tr>
+    <tr><td>Online Training</td><td>Affordable, flexible courses/webinars.</td></tr>
+  </table>
+  <p><strong>Importance:</strong> productivity, retention, adaptability. <strong>Challenges:</strong> resource constraints, keeping pace with trends.</p>
+
+  <h3 class="sub">10.3 Performance Evaluation</h3>
+  <table>
+    <tr><th>Method</th><th>Description</th></tr>
+    <tr><td>360-Degree Feedback</td><td>Input from peers, subordinates, supervisors.</td></tr>
+    <tr><td>KPIs</td><td>Measurable targets assessing performance.</td></tr>
+    <tr><td>Self-Evaluation</td><td>Employee self-assessment followed by manager discussion.</td></tr>
+  </table>
+  <p><strong>Importance:</strong> goal alignment, motivation, career development. <strong>Challenges:</strong> evaluator bias, inconsistent reviews.</p>
+
+  <h3 class="sub">10.4 Legal and Ethical Issues in HRM</h3>
+  <ul>
+    <li><strong>Legal:</strong> business structure, licensing/permits, intellectual property, labor laws.</li>
+    <li><strong>Ethical:</strong> fair treatment, environmental responsibility, transparency/honesty, CSR.</li>
+  </ul>
+
+  <h3 class="sub">10.5 HRM Case Studies</h3>
+  <div class="case"><span class="case-tag">Zappos</span>Prioritised cultural fit over skill-based hiring, immersive culture training, and even paid new hires $2,000 to quit during training to ensure genuine commitment — resulting in low turnover and excellent service culture.</div>
+  <div class="case"><span class="case-tag">Google</span>"People Operations" used data-driven HR (Project Oxygen identified key manager qualities), creative workspaces, and "20% Time" for innovation projects — driving high retention and continued market leadership.</div>
+  <div class="case"><span class="case-tag">Southwest Airlines</span>Employee-centred "fun/family" culture, a Culture Committee, internal promotion focus, and decision-making autonomy led to low turnover and strong customer satisfaction.</div>
+  <div class="case"><span class="case-tag">Toyota</span>The "Toyota Way" (Kaizen + respect for people), team-based structures, extensive training, and job rotation drove global quality leadership and continuous improvement.</div>
+  <div class="case"><span class="case-tag">IKEA</span>Comprehensive training, clear career paths, family-friendly benefits, and work-life balance produced a motivated, loyal workforce and above-average retention.</div>
+
+  <h2 class="section" id="u3-finman">11. Financial Management</h2>
+  <div class="definition">
+    Financial Management is the strategic planning, organising, directing, and controlling of financial activities to achieve organisational goals, maximise shareholder value, and ensure stability.
+  </div>
+
+  <h3 class="sub">Objectives</h3>
+  <ul>
+    <li>Maximising shareholder wealth</li>
+    <li>Ensuring financial stability</li>
+    <li>Efficient resource allocation</li>
+    <li>Minimising cost of capital</li>
+    <li>Profit maximisation</li>
+  </ul>
+
+  <h3 class="sub">Key Functions</h3>
+  <table>
+    <tr><th>Function</th><th>Description</th></tr>
+    <tr><td>Investment Decisions</td><td>Capital budgeting (long-term) and working capital management (short-term).</td></tr>
+    <tr><td>Financing Decisions</td><td>Optimal debt/equity mix.</td></tr>
+    <tr><td>Dividend Decisions</td><td>Portion of earnings distributed vs. retained.</td></tr>
+    <tr><td>Financial Planning &amp; Forecasting</td><td>Budgets, revenue/expense/cash-flow projections.</td></tr>
+    <tr><td>Risk Management</td><td>Identifying/mitigating market, credit, liquidity risk.</td></tr>
+    <tr><td>Financial Control</td><td>Monitoring performance vs. plans/budgets.</td></tr>
+  </table>
+
+  <h3 class="sub">Principles</h3>
+  <ul>
+    <li>Time Value of Money (TVM)</li>
+    <li>Risk and Return Trade-Off</li>
+    <li>Liquidity and Profitability Balance</li>
+    <li>Diversification</li>
+    <li>Leverage</li>
+  </ul>
+
+  <h3 class="sub">Tools &amp; Techniques</h3>
+  <ul>
+    <li>Ratio Analysis</li>
+    <li>Net Present Value (NPV) &amp; Internal Rate of Return (IRR)</li>
+    <li>Cash Flow Analysis</li>
+    <li>Budgeting and Forecasting</li>
+    <li>Cost of Capital</li>
+    <li>Break-Even Analysis</li>
+  </ul>
+
+  <h3 class="sub">Capital Budgeting</h3>
+  <p>The principal objective is to maximise firm value — answering which mutually exclusive projects to select and how many projects in total. The three most common methods:</p>
+  <ul>
+    <li><strong>Payback Method</strong></li>
+    <li><strong>Net Present Value (NPV) Method</strong></li>
+    <li><strong>Internal Rate of Return (IRR) Method</strong></li>
+  </ul>
+
+  <h3 class="sub">Challenges in Financial Management</h3>
+  <ul>
+    <li>Economic fluctuations (inflation, interest rates)</li>
+    <li>Globalisation and currency risk</li>
+    <li>Technology and digital transformation</li>
+    <li>Regulatory compliance</li>
+    <li>Risk of overleveraging</li>
+  </ul>
+
+  <h2 class="section" id="u3-budget">12. Budgeting</h2>
+  <div class="definition">
+    Budgeting is the process of creating a financial plan to allocate resources, set spending limits, and achieve financial goals.
+  </div>
+
+  <h3 class="sub">Objectives</h3>
+  <ul>
+    <li>Resource allocation</li>
+    <li>Cost control</li>
+    <li>Financial stability</li>
+    <li>Profit maximisation (businesses)</li>
+    <li>Goal achievement</li>
+    <li>Decision-making aid</li>
+  </ul>
+
+  <h3 class="sub">Types of Budgeting</h3>
+  <table>
+    <tr><th>Type</th><th>Description</th></tr>
+    <tr><td>Operational Budget</td><td>Day-to-day expenses (salaries, rent, utilities); short-term, fiscal year.</td></tr>
+    <tr><td>Capital Budget</td><td>Long-term investments in assets (machinery, buildings, infrastructure).</td></tr>
+    <tr><td>Cash Flow Budget</td><td>Forecasts inflows/outflows for liquidity planning.</td></tr>
+    <tr><td>Master Budget</td><td>Consolidates individual budgets into an overall plan.</td></tr>
+    <tr><td>Static Budget</td><td>Fixed regardless of activity level.</td></tr>
+    <tr><td>Flexible Budget</td><td>Adjusts with activity/production changes.</td></tr>
+    <tr><td>Zero-Based Budgeting (ZBB)</td><td>Every expense justified afresh each period.</td></tr>
+    <tr><td>Incremental Budgeting</td><td>Based on prior period with incremental changes.</td></tr>
+  </table>
+
+  <h3 class="sub">Steps in the Budgeting Process</h3>
+  <ol>
+    <li>Set objectives</li>
+    <li>Gather data</li>
+    <li>Forecast revenue</li>
+    <li>Estimate expenses</li>
+    <li>Set limits and priorities</li>
+    <li>Prepare the budget document</li>
+    <li>Approval and implementation</li>
+    <li>Monitor and review</li>
+  </ol>
+
+  <h3 class="sub">Advantages &amp; Disadvantages</h3>
+  <table>
+    <tr><th>Advantages</th><th>Disadvantages</th></tr>
+    <tr><td>Financial discipline; better decision-making; contingency preparation; accountability; supports strategic planning</td><td>Time-consuming; rigidity; inaccurate assumptions; "use-it-or-lose-it" mentality; inter-departmental conflict</td></tr>
+  </table>
+
+  <h3 class="sub">Budgeting Techniques &amp; Tools</h3>
+  <ul>
+    <li>Variance Analysis</li>
+    <li>Rolling Budgets</li>
+    <li>Forecasting Tools (Excel, QuickBooks, SAP)</li>
+    <li>Scenario Planning</li>
+    <li>Performance-Based Budgeting</li>
+  </ul>
+
+  <h2 class="section" id="u3-cashflow">13. Cash Flow Management</h2>
+  <div class="definition">
+    Cash Flow Management is the process of tracking, analysing, and optimising cash flowing in and out of a business to ensure liquidity and stability.
+  </div>
+
+  <h3 class="sub">Importance</h3>
+  <ul>
+    <li>Ensures liquidity</li>
+    <li>Prevents financial stress</li>
+    <li>Supports growth opportunities</li>
+    <li>Improves supplier/creditor relationships</li>
+    <li>Enhances decision-making</li>
+    <li>Reduces dependence on loans</li>
+  </ul>
+
+  <h3 class="sub">Types of Cash Flow</h3>
+  <table>
+    <tr><th>Type</th><th>Description</th></tr>
+    <tr><td>Operating Cash Flow</td><td>Cash from core operations (sales revenue minus operating expenses).</td></tr>
+    <tr><td>Investing Cash Flow</td><td>Cash from buying/selling long-term assets.</td></tr>
+    <tr><td>Financing Cash Flow</td><td>Cash from raising funds/repaying debts (loans, shares, dividends).</td></tr>
+  </table>
+
+  <h3 class="sub">Techniques</h3>
+  <ul>
+    <li>Cash flow forecasting</li>
+    <li>Improving receivables collection</li>
+    <li>Extending payables period</li>
+    <li>Maintaining a cash reserve</li>
+    <li>Reducing operating expenses</li>
+    <li>Cash flow financing (lines of credit, invoice factoring)</li>
+    <li>Inventory management (JIT)</li>
+    <li>Lease instead of purchase</li>
+    <li>Seasonal cash flow management</li>
+  </ul>
+
+  <h3 class="sub">Key Metrics</h3>
+  <table>
+    <tr><th>Metric</th><th>Meaning</th></tr>
+    <tr><td>Cash Conversion Cycle (CCC)</td><td>Time to convert inventory/inputs into cash — shorter is better.</td></tr>
+    <tr><td>Days Sales Outstanding (DSO)</td><td>Average days to collect payment after sale — lower is better.</td></tr>
+    <tr><td>Days Payable Outstanding (DPO)</td><td>Average days to pay suppliers — higher maximises cash retention.</td></tr>
+  </table>
+
+  <h3 class="sub">Challenges</h3>
+  <ul>
+    <li>Unpredictable expenses</li>
+    <li>Slow customer payments</li>
+    <li>Seasonal fluctuations</li>
+    <li>High fixed costs</li>
+    <li>Economic uncertainty</li>
+    <li>Dependence on few customers</li>
+  </ul>
+
+  <h3 class="sub">Personal Finance Application</h3>
+  <ul>
+    <li>Track income and expenses</li>
+    <li>Create a monthly budget</li>
+    <li>Build an emergency fund</li>
+    <li>Avoid high-interest debt</li>
+    <li>Automate savings</li>
+  </ul>
+
+  <h2 class="section" id="u3-fsa">14. Financial Statement Analysis</h2>
+  <div class="definition">
+    Financial Statement Analysis examines a company's financial statements to make informed business, investment, and financial decisions.
+  </div>
+
+  <h3 class="sub">Objectives</h3>
+  <ul>
+    <li>Evaluate financial performance</li>
+    <li>Understand financial position</li>
+    <li>Support decision-making</li>
+    <li>Assess liquidity and solvency</li>
+    <li>Identify trends</li>
+    <li>Measure profitability</li>
+  </ul>
+
+  <h3 class="sub">Key Financial Statements</h3>
+  <table>
+    <tr><th>Statement</th><th>Shows</th></tr>
+    <tr><td>Income Statement</td><td>Revenue, expenses, profit over time.</td></tr>
+    <tr><td>Balance Sheet</td><td>Assets, liabilities, equity at a point in time.</td></tr>
+    <tr><td>Cash Flow Statement</td><td>Cash inflows/outflows across operating, investing, financing.</td></tr>
+    <tr><td>Statement of Shareholders' Equity</td><td>Changes in equity — retained earnings, dividends, stock issuance.</td></tr>
+  </table>
+
+  <h3 class="sub">Techniques</h3>
+  <table>
+    <tr><th>Technique</th><th>Description</th></tr>
+    <tr><td>Horizontal Analysis</td><td>Compares data across multiple periods for trends.</td></tr>
+    <tr><td>Vertical Analysis</td><td>Expresses items as % of a base figure (e.g., total assets/sales).</td></tr>
+    <tr><td>Ratio Analysis</td><td>Liquidity, profitability, solvency, efficiency ratios.</td></tr>
+    <tr><td>Trend Analysis</td><td>Patterns over a longer period to project future performance.</td></tr>
+    <tr><td>DuPont Analysis</td><td>Breaks ROE into profit margin, asset turnover, financial leverage.</td></tr>
+    <tr><td>Common Size Analysis</td><td>Converts items to percentages of a base figure for comparability.</td></tr>
+  </table>
+
+  <h3 class="sub">Steps</h3>
+  <ol>
+    <li>Define objectives</li>
+    <li>Review financial statements</li>
+    <li>Apply analysis techniques</li>
+    <li>Compare with industry standards</li>
+    <li>Interpret results</li>
+    <li>Identify trends and insights</li>
+    <li>Formulate recommendations</li>
+  </ol>
+
+  <h3 class="sub">Limitations</h3>
+  <ul>
+    <li>Based on historical data</li>
+    <li>Differences in accounting policies affect comparability</li>
+    <li>Ignores non-financial factors (brand, satisfaction, market conditions)</li>
+    <li>Potential for manipulation</li>
+    <li>Doesn't account for inflation/market changes</li>
+    <li>Lacks qualitative context (management competency, culture)</li>
+  </ul>
+
+  <h2 class="section" id="u3-risk">15. Risk Management and Insurance</h2>
+
+  <h3 class="sub">Key Concepts</h3>
+  <ul>
+    <li><strong>Risk</strong> — possibility of loss/injury or an adverse event.</li>
+    <li><strong>Risk Management</strong> — identifying, assessing, managing, mitigating risks.</li>
+    <li><strong>Insurance</strong> — transfers financial risk to an insurer for a premium.</li>
+  </ul>
+
+  <h3 class="sub">Steps in Risk Management</h3>
+  <ol>
+    <li>Identify risks</li>
+    <li>Assess risks (likelihood × impact)</li>
+    <li>Develop risk management strategies</li>
+    <li>Implement risk controls</li>
+    <li>Monitor and review</li>
+  </ol>
+
+  <h3 class="sub">Risk Management Techniques</h3>
+  <table>
+    <tr><th>Technique</th><th>Description</th></tr>
+    <tr><td>Risk Avoidance</td><td>Not engaging in risk-exposing activities.</td></tr>
+    <tr><td>Risk Reduction</td><td>Steps to reduce severity/likelihood (e.g., fire alarms, cybersecurity).</td></tr>
+    <tr><td>Risk Retention</td><td>Accepting responsibility; reserve funds for potential losses.</td></tr>
+    <tr><td>Risk Transfer</td><td>Shifting financial burden via insurance or contracts.</td></tr>
+  </table>
+
+  <div class="case">
+    <span class="case-tag">Case Study</span><strong>Camels in New Zealand</strong> — John Magill faced years of red tape and $7,000 in costs importing camels for a trekking business, as camels qualified as "new organisms" under the Hazardous Substances and New Organisms Act, requiring lengthy Environmental Risk Management Authority hearings. He eventually sold the camels — illustrating regulatory/compliance risk in entrepreneurship.
+  </div>
+
+  <h3 class="sub">Types of Insurance as Risk Management Tools</h3>
+  <table>
+    <tr><th>Insurance Type</th><th>Covers</th></tr>
+    <tr><td>Property Insurance</td><td>Buildings, equipment, inventory (fire, theft, disaster).</td></tr>
+    <tr><td>Liability Insurance</td><td>Legal liabilities from injury/damage to third parties.</td></tr>
+    <tr><td>Health Insurance</td><td>Medical expenses from illness/injury.</td></tr>
+    <tr><td>Life Insurance</td><td>Financial benefit to beneficiaries on death.</td></tr>
+    <tr><td>Disability Insurance</td><td>Income protection if unable to work.</td></tr>
+    <tr><td>Auto Insurance</td><td>Vehicle accident damages/injuries.</td></tr>
+    <tr><td>Business Interruption Insurance</td><td>Lost income from covered operational disruption.</td></tr>
+    <tr><td>Cyber Insurance</td><td>Losses from data breaches/cyber-attacks.</td></tr>
+    <tr><td>Workers' Compensation</td><td>Medical/lost wages for workplace injuries.</td></tr>
+  </table>
+
+  <h3 class="sub">Risk Management in Insurance</h3>
+  <ul>
+    <li><strong>Underwriting</strong> — assessing risk to set premiums/coverage terms.</li>
+    <li><strong>Premium Calculation</strong> — based on risk level, coverage, claim history.</li>
+    <li><strong>Claims Management</strong> — assessing and paying valid claims.</li>
+    <li><strong>Reinsurance</strong> — insurers transferring part of their risk portfolio.</li>
+    <li><strong>Deductibles and Policy Limits</strong> — shared risk between insurer and policyholder.</li>
+  </ul>
+
+  <h3 class="sub">Role of Technology</h3>
+  <ul>
+    <li>Data Analytics &amp; Predictive Modeling</li>
+    <li>Artificial Intelligence (underwriting, claims automation)</li>
+    <li>Internet of Things (real-time risk monitoring)</li>
+    <li>Blockchain (transparency/security)</li>
+    <li>Risk Management Software</li>
+  </ul>
+
+  <h2 class="section" id="u3-legal">16. Legal and Ethical Issues in Entrepreneurship</h2>
+
+  <h3 class="sub">16.1 Overview</h3>
+  <p>Legal issues involve compliance with laws; ethical issues involve moral business behaviour. Both matter for avoiding penalties/litigation and building reputational trust.</p>
+
+  <h3 class="sub">16.2 Intellectual Property Rights (IPR)</h3>
+  <table>
+    <tr><th>Type</th><th>Protects</th></tr>
+    <tr><td>Patents</td><td>Inventions — exclusive rights typically for 20 years.</td></tr>
+    <tr><td>Trademarks</td><td>Brand names, logos, slogans.</td></tr>
+    <tr><td>Copyrights</td><td>Original creative works — literature, music, software, art.</td></tr>
+    <tr><td>Trade Secrets</td><td>Confidential competitive-edge information (formulas, designs).</td></tr>
+  </table>
+  <p><strong>Importance:</strong> secures uniqueness, prevents unauthorised copying, can be licensed/franchised. <strong>Challenges:</strong> high filing/maintenance costs, potential infringement litigation.</p>
+
+  <h3 class="sub">16.3 Contracts</h3>
+  <h4>Key Elements</h4>
+  <ol>
+    <li>Offer and Acceptance</li>
+    <li>Consideration</li>
+    <li>Mutual Consent</li>
+    <li>Legality</li>
+  </ol>
+  <h4>Types of Contracts</h4>
+  <ul>
+    <li>Employment Contracts</li>
+    <li>Non-Disclosure Agreements (NDAs)</li>
+    <li>Partnership Agreements</li>
+    <li>Sales and Service Contracts</li>
+  </ul>
+  <p><strong>Common issues:</strong> breach of contract, ambiguous terms, unfair clauses.</p>
+
+  <h3 class="sub">16.4 Corporate Governance</h3>
+  <h4>Core Principles</h4>
+  <ol>
+    <li>Accountability</li>
+    <li>Transparency</li>
+    <li>Fairness</li>
+    <li>Responsibility</li>
+  </ol>
+  <h4>Structures</h4>
+  <ul>
+    <li>Board of Directors — oversight and strategic guidance.</li>
+    <li>Advisory Committees — specialised areas (finance, ethics).</li>
+    <li>Internal Controls — monitoring compliance with laws/ethics.</li>
+  </ul>
+  <p><strong>Importance for startups:</strong> improved decision-making, investor confidence, long-term sustainability.</p>
+
+  <h3 class="sub">16.5 Case Studies</h3>
+  <div class="case"><span class="case-tag">IPR — Tech Startup</span>Founders patented technology, trademarked the brand, and used NDAs during partner discussions — preventing a competitor from copying the idea and enabling licensing revenue. <em>Lesson:</em> proactive IPR management protects competitive advantage and opens new opportunities.</div>
+  <div class="case"><span class="case-tag">Contracts — Freelance Design</span>A designer's clear written payment schedule allowed them to win a small-claims case after a client refused to pay — demonstrating the importance of well-defined, written agreements.</div>
+
+  <h3 class="sub">16.6 Practical Applications</h3>
+  <ul>
+    <li>Workshops and seminars on legal compliance and ethics</li>
+    <li>Legal consultation for contract review and IP management</li>
+    <li>Ethical audits to ensure adherence to standards</li>
+    <li>Governance tools/software for board activity and compliance monitoring</li>
+  </ul>
+
+  <footer>
+    Study Material compiled from Unit II (Entrepreneurial Opportunity Evaluation; Business Planning and Strategy Development) and Unit III (Entrepreneurial Marketing and Sales; Entrepreneurial Finance and Resource Management).
+  </footer>
+
+</main>
+</div>
+</body>
+</html>

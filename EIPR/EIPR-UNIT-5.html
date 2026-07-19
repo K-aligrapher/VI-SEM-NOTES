@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 5 — Intellectual Property Law | Study Guide</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#f5f2eb;--bg2:#eceadf;--bg3:#ffffff;--text:#1a1916;--text2:#4a4840;--text3:#7a7670;
+    --border:#d8d4c8;--border2:#c4c0b2;--accent:#1a1a2e;--gold:#8b6914;--gold-bg:#fdf6e3;
+    --red:#8b2020;--red-bg:#fdf0f0;--green:#1a4a25;--green-bg:#f0f7f2;--blue:#1a3060;--blue-bg:#f0f4fc;
+    --shadow:0 2px 12px rgba(0,0,0,.08);--shadow-lg:0 8px 32px rgba(0,0,0,.12)
+  }
+  @media(prefers-color-scheme:dark){:root{
+    --bg:#111118;--bg2:#1a1a24;--bg3:#1f1f2e;--text:#e8e4d8;--text2:#b0ac9e;--text3:#706c60;
+    --border:#2e2e40;--border2:#3e3e55;--accent:#d4c9a8;--gold:#d4a844;--gold-bg:#1e1808;
+    --red:#e08080;--red-bg:#200808;--green:#7ecf8e;--green-bg:#081408;--blue:#80a8e0;--blue-bg:#080c20;
+    --shadow:0 2px 12px rgba(0,0,0,.4);--shadow-lg:0 8px 32px rgba(0,0,0,.5)
+  }}
+  html{scroll-behavior:smooth}
+  body{font-family:'Source Serif 4',Georgia,serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.7}
+  .site-header{background:#1a1a2e;color:#f0e8d0;padding:28px 36px 22px;position:sticky;top:0;z-index:100;box-shadow:var(--shadow-lg)}
+  .site-header h1{font-family:'Playfair Display',serif;font-size:24px;font-weight:900;color:#f5efd5;margin-bottom:4px}
+  .site-header p{font-family:'JetBrains Mono',monospace;font-size:10px;color:#9e9a8a;letter-spacing:1.5px;text-transform:uppercase}
+  .tab-bar{background:var(--bg2);border-bottom:1px solid var(--border);padding:0 24px;display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;position:sticky;top:88px;z-index:99}
+  .tab-bar::-webkit-scrollbar{height:0}
+  .tab-btn{background:none;border:none;border-bottom:3px solid transparent;color:var(--text3);padding:13px 16px 10px;cursor:pointer;font-family:'Source Serif 4',serif;font-size:13.5px;white-space:nowrap;transition:color .18s,border-color .18s;position:relative;top:1px}
+  .tab-btn:hover{color:var(--text)}
+  .tab-btn.active{color:var(--text);border-bottom-color:var(--gold);font-weight:600}
+  .content{max-width:880px;margin:0 auto;padding:32px 24px 80px}
+  .tab-section{display:none}
+  .tab-section.active{display:block}
+  .card{background:var(--bg3);border:1px solid var(--border);border-radius:14px;padding:22px 26px;margin-bottom:18px;box-shadow:var(--shadow)}
+  .card-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--text);margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid var(--border)}
+  p{font-size:14px;line-height:1.85;color:var(--text2);margin-bottom:9px}
+  p:last-child{margin-bottom:0}
+  ul,ol{padding-left:20px;margin:7px 0}
+  li{font-size:13.5px;line-height:1.8;color:var(--text2);margin-bottom:3px}
+  strong{color:var(--text);font-weight:600}
+  em{font-style:italic}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+  .three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:12px}
+  .mini-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+  .mini-title{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:7px}
+  .tag{display:inline-block;background:#1a1a2e;color:#d4c9a8;font-family:'JetBrains Mono',monospace;font-size:9.5px;padding:2px 7px;border-radius:4px;margin-right:5px;margin-bottom:4px;letter-spacing:.5px}
+  .tag.gold{background:var(--gold-bg);color:var(--gold);border:1px solid var(--gold)}
+  .tag.red{background:var(--red-bg);color:var(--red);border:1px solid var(--red)}
+  .tag.green{background:var(--green-bg);color:var(--green);border:1px solid var(--green)}
+  .tag.blue{background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue)}
+  .callout{border-left:3px solid var(--red);background:var(--red-bg);border-radius:0 8px 8px 0;padding:11px 15px;margin-top:10px}
+  .callout p{color:var(--red);font-size:13px;margin:0}
+  .callout.green{border-left-color:var(--green);background:var(--green-bg)}
+  .callout.green p{color:var(--green)}
+  .callout.gold{border-left-color:var(--gold);background:var(--gold-bg)}
+  .callout.gold p{color:var(--gold)}
+  .callout.blue{border-left-color:var(--blue);background:var(--blue-bg)}
+  .callout.blue p{color:var(--blue)}
+  .tbl-wrap{overflow-x:auto;margin-top:10px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th{background:#1a1a2e;color:#d4c9a8;font-family:'JetBrains Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.5px;padding:9px 11px;text-align:left}
+  td{padding:9px 11px;border-bottom:1px solid var(--border);color:var(--text2);font-size:13px}
+  tr:last-child td{border-bottom:none}
+  tr:nth-child(even) td{background:var(--bg2)}
+  .steps{margin-top:8px}
+  .step{display:flex;gap:12px;align-items:flex-start;margin-bottom:11px;padding-bottom:11px;border-bottom:1px solid var(--border)}
+  .step:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+  .step-num{min-width:26px;height:26px;background:#1a1a2e;color:#d4c9a8;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:10.5px;font-weight:500;flex-shrink:0;margin-top:3px}
+  .step-body strong{display:block;font-size:13.5px;margin-bottom:2px}
+  .step-body p{font-size:13px;margin:0}
+  .timeline{position:relative;padding-left:22px;margin-top:8px}
+  .timeline::before{content:'';position:absolute;left:5px;top:6px;bottom:6px;width:1.5px;background:var(--border2)}
+  .t-item{position:relative;margin-bottom:12px}
+  .t-item:last-child{margin-bottom:0}
+  .t-item::before{content:'';position:absolute;left:-18px;top:6px;width:7px;height:7px;border-radius:50%;background:#1a1a2e;border:2px solid var(--bg3);box-shadow:0 0 0 1.5px var(--border2)}
+  .t-year{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--gold);font-weight:500;margin-bottom:1px}
+  .t-text{font-size:13px;color:var(--text2)}
+  /* CASE CARDS */
+  .case-card{background:var(--bg3);border:1px solid var(--border);border-radius:14px;margin-bottom:22px;box-shadow:var(--shadow);overflow:hidden}
+  .case-header{background:#1a1a2e;padding:16px 22px;display:flex;align-items:flex-start;gap:14px}
+  .case-num{font-family:'Playfair Display',serif;font-size:32px;font-weight:900;color:rgba(212,201,168,.25);line-height:1;flex-shrink:0;min-width:38px}
+  .case-header-text{flex:1}
+  .case-header h3{font-family:'Playfair Display',serif;font-size:16px;color:#f0e8d0;margin-bottom:3px;font-weight:700}
+  .case-header p{font-size:10px;color:#9e9a8a;font-family:'JetBrains Mono',monospace;margin:0;letter-spacing:.5px}
+  .case-body{padding:20px 22px}
+  .case-section-title{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--text3);margin-bottom:5px;margin-top:14px}
+  .case-section-title:first-child{margin-top:0}
+  .verdict{background:var(--green-bg);border:1px solid var(--green);border-radius:8px;padding:13px 15px;margin-top:10px}
+  .verdict .verdict-label{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;color:var(--green);margin-bottom:5px}
+  .verdict p{color:var(--text2);font-size:13px;margin:0}
+  .verdict p+p{margin-top:7px}
+  .significance{background:var(--gold-bg);border:1px solid var(--gold);border-radius:8px;padding:13px 15px;margin-top:9px}
+  .significance .sig-label{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:5px}
+  .significance p{color:var(--text2);font-size:13px;margin:0}
+  .parties-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;margin:10px 0}
+  .party{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:10px 13px;text-align:center}
+  .party-label{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:3px}
+  .party-name{font-size:12.5px;font-weight:600;color:var(--text)}
+  .vs{font-family:'Playfair Display',serif;font-size:18px;font-weight:900;color:var(--text3);text-align:center}
+  /* PRODUCT CASES */
+  .product-case{background:var(--bg3);border:1px solid var(--border);border-radius:14px;margin-bottom:18px;overflow:hidden;box-shadow:var(--shadow)}
+  .product-header{display:flex}
+  .product-stripe{width:5px;background:#1a1a2e;flex-shrink:0}
+  .product-content{padding:16px 20px;flex:1}
+  .product-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;margin-bottom:3px}
+  .product-meta{font-family:'JetBrains Mono',monospace;font-size:9.5px;color:var(--text3);letter-spacing:.8px;margin-bottom:10px}
+  /* QUICK REVISION */
+  .stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-top:10px}
+  .stat-box{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px 14px;text-align:center}
+  .stat-val{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--text);display:block}
+  .stat-label{font-size:11.5px;color:var(--text3);margin-top:3px}
+  .confusion-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);align-items:flex-start}
+  .confusion-item:last-child{border-bottom:none;padding-bottom:0}
+  .confusion-item p{font-size:13.5px;margin:0}
+  @media(max-width:600px){
+    .site-header{padding:20px 18px 15px}
+    .site-header h1{font-size:19px}
+    .content{padding:20px 14px 60px}
+    .card{padding:16px 14px}
+    .two-col,.three-col{grid-template-columns:1fr}
+    .parties-grid{grid-template-columns:1fr}
+    .vs{display:none}
+    .case-header{padding:13px 16px}
+    .case-body{padding:15px 16px}
+  }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <h1>Unit 5 — Intellectual Property Law</h1>
+  <p>Industrial Designs · Copyright · Cyber Law · IT Act 2000 · Complete Study Guide with Case Studies</p>
+</header>
+<nav class="tab-bar">
+  <button class="tab-btn active" onclick="showTab('design',this)">Industrial Designs</button>
+  <button class="tab-btn" onclick="showTab('copyright',this)">Copyright</button>
+  <button class="tab-btn" onclick="showTab('cyber',this)">Cyber Law</button>
+  <button class="tab-btn" onclick="showTab('cases',this)">Case Studies</button>
+  <button class="tab-btn" onclick="showTab('quick',this)">Quick Revision</button>
+</nav>
+<main class="content">
+
+<!-- TAB 1: INDUSTRIAL DESIGNS -->
+<section class="tab-section active" id="tab-design">
+  <div class="card">
+    <div class="card-title">What is an Industrial Design?</div>
+    <p>An industrial design refers to the <strong>ornamental or aesthetic aspect</strong> of an article that is generally mass-produced and useful. From an IP law perspective, it covers only the <em>appearance</em> of a product — not its technical or functional aspects.</p>
+    <div class="two-col">
+      <div class="mini-card"><div class="mini-title">3D Features</div><ul><li>Shape of the product</li><li>Surface treatment</li><li>Form and contour</li></ul></div>
+      <div class="mini-card"><div class="mini-title">2D Features</div><ul><li>Patterns and ornamentation</li><li>Lines and colours</li><li>Combination of above</li></ul></div>
+    </div>
+    <div class="callout green" style="margin-top:12px"><p><strong>Key Rule:</strong> If a design cannot be applied to an article → it falls under <strong>copyright</strong> as an artistic work. Some designs may also qualify as <strong>trademarks</strong>.</p></div>
+    <div class="callout blue" style="margin-top:8px"><p><strong>Governed by:</strong> Designs Act, 2000 (replaced the Designs Act, 1911). Object: reward creators with exclusive use while removing impediments to free use of available designs.</p></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Creative Designs in Business</div>
+    <div class="three-col">
+      <div class="mini-card"><div class="mini-title">1. Customise Products</div><p style="font-size:13px">Modify designs for specific age groups, cultures or segments (e.g., children vs. adults for watches). Same function, different design.</p></div>
+      <div class="mini-card"><div class="mini-title">2. Create Niche Markets</div><p style="font-size:13px">Differentiate products from competitors through creative design — from ordinary locks to luxury cars.</p></div>
+      <div class="mini-card"><div class="mini-title">3. Strengthen Brands</div><p style="font-size:13px">Combine design with trademarks to create or redefine brand identity. Many companies have redefined themselves through product design focus.</p></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Why Protect Industrial Designs?</div>
+    <ul>
+      <li><strong>Prevent copying:</strong> Registration creates exclusive rights, stopping competitors from imitating your design</li>
+      <li><strong>Return on investment:</strong> Ensures fair reward for design and marketing costs</li>
+      <li><strong>Business asset:</strong> Registered designs increase company and product commercial value</li>
+      <li><strong>Licensing revenue:</strong> Can license or sell to others to enter markets otherwise unreachable</li>
+      <li><strong>Fair competition:</strong> Encourages honest trade practices and a diverse range of attractive products</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="card-title">10-Step Procedure for Design Protection</div>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div class="step-body"><strong>Research &amp; Preliminary Assessment</strong><p>Search existing designs in patent office databases to confirm your design is unique and not already protected.</p></div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-body"><strong>Identify the Jurisdiction</strong><p>Choose where to file — single country, regional office (EU IPO), or international application via the Hague System (WIPO).</p></div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-body"><strong>Prepare Application Documents</strong><p>Drawings/illustrations of the design, description of features and functionality, jurisdiction-specific forms.</p></div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-body"><strong>File the Application</strong><p>Submit to the relevant IP office with all documents and required filing fees.</p></div></div>
+      <div class="step"><div class="step-num">5</div><div class="step-body"><strong>Examination</strong><p>The IP office assesses whether the design meets legal requirements including novelty and originality.</p></div></div>
+      <div class="step"><div class="step-num">6</div><div class="step-body"><strong>Publication</strong><p>Accepted applications published in a public database or journal, notifying third parties and opening the opposition window.</p></div></div>
+      <div class="step"><div class="step-num">7</div><div class="step-body"><strong>Opposition Period</strong><p>Third parties may file objections. If no valid opposition or resolved in your favour, proceeds to registration.</p></div></div>
+      <div class="step"><div class="step-num">8</div><div class="step-body"><strong>Registration</strong><p>Certificate of registration issued — serves as legal evidence of your design rights.</p></div></div>
+      <div class="step"><div class="step-num">9</div><div class="step-body"><strong>Maintenance &amp; Renewal</strong><p>Design protection is time-limited. Track renewal deadlines and pay fees to maintain protection.</p></div></div>
+      <div class="step"><div class="step-num">10</div><div class="step-body"><strong>Enforcement</strong><p>If infringed: cease-and-desist letters, licensing negotiation, or litigation in court.</p></div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Revocation, Infringement &amp; Remedies</div>
+    <div class="two-col">
+      <div class="mini-card">
+        <div class="mini-title" style="color:var(--red)">Grounds for Revocation</div>
+        <ul><li>Lack of novelty or originality</li><li>Lack of individual character</li><li>Non-compliance with procedure</li><li>Third-party invalidity claims</li></ul>
+      </div>
+      <div class="mini-card">
+        <div class="mini-title" style="color:var(--gold)">Available Remedies</div>
+        <ul><li>Cease and desist letters</li><li>Negotiation / licensing agreements</li><li>Court injunctions</li><li>Monetary damages</li><li>Seizure / destruction of infringing goods</li><li>Litigation</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TAB 2: COPYRIGHT -->
+<section class="tab-section" id="tab-copyright">
+  <div class="card">
+    <div class="card-title">What is Copyright?</div>
+    <p>Copyright is the legal right given to creators of <strong>literary, dramatic, musical, and artistic works</strong> to control copying and use of their work. Protection is <strong>automatic from the moment of creation</strong> — no registration needed.</p>
+    <div class="callout gold" style="margin-top:10px"><p><strong>Important:</strong> Mere ideas are NOT protected. Only the <em>expression</em> of ideas is protected. Confirmed by TRIPS Agreement Article 9.2.</p></div>
+    <div class="two-col" style="margin-top:12px">
+      <div class="mini-card"><div class="mini-title">Economic Rights</div><ul><li>Reproduction</li><li>Broadcasting</li><li>Public performance</li><li>Adaptation &amp; translation</li><li>Public recitation &amp; display</li><li>Distribution</li></ul></div>
+      <div class="mini-card"><div class="mini-title">Moral Rights</div><ul><li>Right to claim authorship</li><li>Right to object to distortion, mutilation or modification harmful to reputation</li><li>Personal to author; cannot be transferred</li></ul></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Copyright in India — Historical Timeline</div>
+    <div class="timeline">
+      <div class="t-item"><div class="t-year">1847</div><div class="t-text">First copyright law enacted under British Governor General of India</div></div>
+      <div class="t-item"><div class="t-year">1911</div><div class="t-text">UK Copyright Act 1911 automatically applied to India (part of British Raj)</div></div>
+      <div class="t-item"><div class="t-year">1957</div><div class="t-text">Indian Copyright Act passed; came into force 1958 after independence</div></div>
+      <div class="t-item"><div class="t-year">1984</div><div class="t-text">Amendment — copyright infringement made cognizable and non-bailable offence</div></div>
+      <div class="t-item"><div class="t-year">1994</div><div class="t-text">Amendment — Performer's rights (s.38) &amp; Broadcaster's rights (s.37) introduced; software piracy provisions added</div></div>
+      <div class="t-item"><div class="t-year">2003–04</div><div class="t-text">Latest amendment; came into force May 2004</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Duration of Copyright</div>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Type of Work</th><th>Duration</th></tr>
+        <tr><td>Literary, dramatic, musical, artistic (India)</td><td>Lifetime + <strong>60 years</strong></td></tr>
+        <tr><td>Joint authorship (India)</td><td>60 years from death of last surviving author</td></tr>
+        <tr><td>Photographs, films, sound recordings</td><td><strong>60 years</strong> from first publication</td></tr>
+        <tr><td>Berne Convention minimum</td><td>Lifetime + <strong>50 years</strong></td></tr>
+        <tr><td>Cinematographic works (Berne)</td><td>Minimum 50 years from creation/first publication</td></tr>
+        <tr><td>Photographic works (Berne)</td><td>Minimum 25 years from creation</td></tr>
+      </table>
+    </div>
+    <div class="callout gold" style="margin-top:10px"><p>Dates in a copyright notice (e.g., © 1998, 2003) are dates of creation/modification, NOT expiry dates.</p></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Exceptions — Fair Use (Section 52)</div>
+    <ul>
+      <li>Reproduction for <strong>private use, research, review</strong></li>
+      <li>Reporting in newspapers, magazines, periodicals</li>
+      <li>Reproduction for <strong>judicial proceedings</strong></li>
+      <li>Reproduction by Legislature Secretariats for members' use</li>
+      <li><strong>Performance in educational institutions</strong> (staff, students, parents)</li>
+      <li>Making a <strong>certified copy</strong> as required by law</li>
+    </ul>
+    <div class="callout" style="margin-top:10px"><p><strong>Punishment for infringement:</strong> Min 6 months to 3 years + fine ₹50,000–₹2 lakh. For software piracy: 7 days–3 years + fine (reduced if no pecuniary gain).</p></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Copyright Transfer — Assignment vs. Licensing</div>
+    <div class="two-col">
+      <div class="mini-card"><div class="mini-title">Assignment</div><ul><li>Full transfer of ownership and all rights</li><li>Must be in writing (signed document)</li><li>Can be complete or partial</li><li>Duration can be specified</li><li>Original owner loses the transferred rights</li></ul></div>
+      <div class="mini-card"><div class="mini-title">Licensing</div><ul><li>Permission to use only; owner retains title</li><li>Can be exclusive or non-exclusive</li><li>Limited in scope, territory, and time</li><li>Royalties paid to the owner</li><li>Owner can grant multiple licenses</li></ul></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Related Rights (Neighbouring Rights)</div>
+    <p>Belong to <strong>performers, phonogram producers, and broadcasting organisations</strong> — the intermediaries who help communicate works to the public. Governed by the <strong>Rome Convention (1961)</strong>, administered jointly by UNESCO, ILO, and WIPO.</p>
+    <div class="two-col" style="margin-top:12px">
+      <div class="mini-card">
+        <div class="mini-title">Performer's Rights (Section 38)</div>
+        <p style="font-size:12.5px;margin-bottom:7px">Includes actors, singers, musicians, dancers, acrobats, jugglers, snake charmers, lecturers.</p>
+        <ul><li>Make/reproduce sound or visual recording</li><li>Broadcast the performance</li><li>Communicate to the public other than by broadcast</li></ul>
+      </div>
+      <div class="mini-card">
+        <div class="mini-title">Broadcaster's Rights (Section 37)</div>
+        <p style="font-size:12.5px;margin-bottom:7px">Broadcasting Reproduction Rights — introduced by 1994 amendment.</p>
+        <ul><li>Reproduce the broadcast</li><li>Cause broadcast to be heard/seen publicly for charges</li><li>Make sound/visual recordings</li><li>Reproduce such recordings</li><li>Sell or hire recordings</li></ul>
+      </div>
+    </div>
+    <div class="callout blue" style="margin-top:10px"><p><strong>Exceptions (Section 39):</strong> Private use · Bona fide teaching or research · Reporting current events (excerpts only) · General exceptions under Section 52</p></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Software &amp; Copyright</div>
+    <ul>
+      <li>Computer programmes protected as <strong>literary works</strong> under Berne Convention Article 2(1)</li>
+      <li>Both <strong>source code</strong> and <strong>object code</strong> are protected</li>
+      <li>Storing a programme in computer memory = reproduction = covered by copyright</li>
+      <li>"Decompilation" = reproduction + adaptation into analysable form</li>
+      <li><strong>Author</strong> = person who conceived the product and directed its creation — not merely the programmer/technician</li>
+    </ul>
+    <div class="card-title" style="font-size:15px;margin-top:16px">5 Types of Software Piracy</div>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Type</th><th>Description</th></tr>
+        <tr><td><strong>Counterfeiters</strong></td><td>Fake disks, documentation and packaging appearing identical to publisher's original products</td></tr>
+        <tr><td><strong>Resellers</strong></td><td>Distributors/dealers make unauthorized copies pre-installed on computers they sell</td></tr>
+        <tr><td><strong>Mail-order</strong></td><td>Unauthorized copying onto disks/CDs and distribution by post</td></tr>
+        <tr><td><strong>Bulletin board pirates</strong></td><td>Sharing via telecom/modem — users dial in and copy programmes without authorization</td></tr>
+        <tr><td><strong>End-user piracy</strong></td><td>Copying software to more computers than licensed — most widespread form</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- TAB 3: CYBER LAW -->
+<section class="tab-section" id="tab-cyber">
+  <div class="card">
+    <div class="card-title">Information Technology Act, 2000</div>
+    <p>India became the <strong>12th country</strong> to enact cyber law. Based on UNCITRAL's 1996 Model Law on E-Commerce. Came into force <strong>17 October 2000</strong>. Provides "functional equivalence" — amends Indian Evidence Act 1872 and Indian Penal Code.</p>
+    <div class="two-col" style="margin-top:12px">
+      <div class="mini-card"><div class="mini-title">Key Objectives</div><ul><li>Legal recognition to e-commerce &amp; digital transactions</li><li>Legal validity of digital signatures</li><li>Electronic filing with government</li><li>Electronic storage of data</li><li>Legal sanction for electronic fund transfers</li><li>Banks may keep accounts electronically</li></ul></div>
+      <div class="mini-card"><div class="mini-title">NOT Applicable To (Section 1[4])</div><ul><li>Negotiable instruments (except cheques)</li><li>Power of Attorney</li><li>Creation of Trust</li><li>Wills &amp; testamentary dispositions</li><li>Sale/conveyance of immovable property</li><li>Other documents notified by Central Government</li></ul></div>
+    </div>
+    <div class="callout blue" style="margin-top:10px"><p><strong>Scope:</strong> Extends to the whole of India. Also applies to offences committed <em>outside India</em> involving a computer/network located in India — regardless of offender's nationality.</p></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Digital Signature vs. Electronic Signature</div>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Aspect</th><th>Electronic Signature</th><th>Digital Signature</th></tr>
+        <tr><td>Nature</td><td>Digital form of wet-ink signature; broad category</td><td>Secured signature using PKI + asymmetric cryptography</td></tr>
+        <tr><td>Purpose</td><td>Verifying a document</td><td>Securing a document</td></tr>
+        <tr><td>Validation</td><td>Not validated by certificate authorities</td><td>Validated by trusted certificate authorities</td></tr>
+        <tr><td>Security</td><td>Vulnerable to tampering</td><td>Highly secure with encryption standards</td></tr>
+        <tr><td>Verifiability</td><td>Cannot be independently verified</td><td>Verifiable by anyone with public key</td></tr>
+        <tr><td>Common Types</td><td>Verbal, electronic ticks, scanned signatures</td><td>Adobe, Microsoft; asymmetric cryptography</td></tr>
+        <tr><td>Evidential Value</td><td>Lesser evidential value</td><td>Preferred; greater authenticity</td></tr>
+      </table>
+    </div>
+    <p style="margin-top:10px"><strong>Three features of digital signatures:</strong> (1) Authentication — verifies source, (2) Integrity — assures no alteration, (3) Non-repudiation — sender cannot deny</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Categories of Cybercrime</div>
+    <div class="three-col">
+      <div class="mini-card"><div class="mini-title" style="color:var(--red)">Against Persons</div><ul><li>Cyber harassment (sexual, racial, religious)</li><li>Identity theft / impersonation</li><li>Defamation / pornography</li><li>Phishing &amp; spam</li></ul></div>
+      <div class="mini-card"><div class="mini-title" style="color:var(--gold)">Against Property</div><ul><li>Computer vandalism</li><li>Harmful program transmission</li><li>Unauthorized cyber trespass</li><li>Software piracy</li><li>Industrial espionage</li></ul></div>
+      <div class="mini-card"><div class="mini-title" style="color:var(--blue)">Against Government</div><ul><li>Cyber terrorism</li><li>Threatening governments</li><li>Electronic espionage</li><li>Information warfare</li><li>Hacking government systems</li></ul></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Types of Cyber Attacks</div>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Attack Type</th><th>Description</th></tr>
+        <tr><td><strong>Hacking</strong></td><td>Gaining unauthorized entry into computer system's logical, arithmetical, or memory resources</td></tr>
+        <tr><td><strong>Trojan Attack</strong></td><td>Appears useful but executes malicious actions; has Client and Server parts; attacker connects remotely</td></tr>
+        <tr><td><strong>Virus</strong></td><td>Programme that infects other programmes, makes copies, and spreads into other programmes</td></tr>
+        <tr><td><strong>Worm</strong></td><td>Like viruses but spreads automatically computer-to-computer via networks; no host programme needed</td></tr>
+        <tr><td><strong>Email Spoofing</strong></td><td>Email appears to originate from one source when actually sent from another</td></tr>
+        <tr><td><strong>Email Bombing</strong></td><td>Repeatedly sending identical emails to a single address to overwhelm/crash it</td></tr>
+        <tr><td><strong>Denial of Service (DoS)</strong></td><td>Flooding a resource with more requests than it can handle, causing crash and denying access to legitimate users</td></tr>
+        <tr><td><strong>Email Fraud</strong></td><td>Intentional deception for personal gain or to damage another individual through email</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Intermediary Liability</div>
+    <p>An <strong>intermediary</strong> (Section 2[w]) = any person who receives, stores, or transmits electronic records on behalf of another — includes ISPs, web hosts, search engines, online marketplaces, payment sites, cyber cafes.</p>
+    <p>Protected from liability if:</p>
+    <ul>
+      <li>Has a written policy compliant with Intermediary Guidelines</li>
+      <li>Has appointed a <strong>Grievance Officer</strong></li>
+      <li>Acknowledges grievance notice within <strong>36 hours</strong></li>
+      <li>Acts fully within <strong>21 days</strong> of notice</li>
+      <li>Takes down infringing content upon valid notification</li>
+    </ul>
+    <div class="callout" style="margin-top:10px"><p><strong>Intermediary Liability covers:</strong> Copyright violations (music, films, images) · Prohibited content (hate speech, racism, pornography)</p></div>
+  </div>
+  <div class="card">
+    <div class="card-title">IT Amendment Act, 2008</div>
+    <ul>
+      <li><strong>Section 66:</strong> Dishonest/fraudulent acts (destroying, altering, stealing data or source code) — up to 3 years or fine up to ₹5 lakh, or both</li>
+      <li><strong>Section 66A:</strong> Sending offensive messages through communication services — up to 3 years + fine</li>
+    </ul>
+    <div class="callout" style="margin-top:10px"><p><strong>IT Act overall maximum:</strong> Imprisonment up to 10 years and compensation up to ₹1 crore.</p></div>
+  </div>
+  <div class="card">
+    <div class="card-title">Privacy vs. Confidentiality vs. Security</div>
+    <div class="three-col">
+      <div class="mini-card"><div class="mini-title">Privacy</div><p style="font-size:12.5px">Individual's right to keep personal data to themselves. Protects consumer information from dissemination or sale without consent.</p></div>
+      <div class="mini-card"><div class="mini-title">Confidentiality</div><p style="font-size:12.5px">Applies to service providers trusted with personal data. Agreements requiring safeguarding data shared by clients.</p></div>
+      <div class="mini-card"><div class="mini-title">Security</div><p style="font-size:12.5px">Protects enterprise/government systems from external threats. Security may not automatically ensure privacy.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TAB 4: CASE STUDIES -->
+<section class="tab-section" id="tab-cases">
+
+  <div class="card" style="background:var(--gold-bg);border-color:var(--gold)">
+    <p style="font-size:13.5px;color:var(--text2)"><strong>This section covers all case studies in detail:</strong> 5 Industrial Design examples (Apple, Alessi, Vespa, Swatch, Oxo), 4 Indian copyright/broadcasting cases, and 3 cyber law cases.</p>
+  </div>
+
+  <div class="card"><div class="card-title">Section A — Industrial Design Case Studies</div></div>
+
+  <div class="product-case">
+    <div class="product-header">
+      <div class="product-stripe"></div>
+      <div class="product-content">
+        <div class="product-meta">CASE 01 · INDUSTRIAL DESIGN · TECHNOLOGY</div>
+        <div class="product-title">Apple iPhone Design</div>
+        <div style="margin-bottom:10px"><span class="tag">Design Patents</span><span class="tag gold">Landmark</span></div>
+        <div class="case-section-title">Background</div>
+        <p>Apple introduced the original iPhone in 2007, representing a radical departure from existing mobile phone designs. The design, largely credited to Jony Ive, featured a minimalist form factor, smooth rounded edges, a large glass touchscreen as the entire face, and an absence of physical keyboard or buttons.</p>
+        <div class="case-section-title">Design Features Protected</div>
+        <ul><li><strong>Minimalist rectangular slab</strong> with no protruding elements</li><li><strong>Smooth rounded corners</strong> — the specific radius and curvature</li><li><strong>Proportion of screen to bezel</strong> — large front touchscreen</li><li><strong>Grid icon layout</strong> — arrangement of app icons on the home screen</li><li><strong>Minimalist packaging</strong> — white box with product image</li></ul>
+        <div class="significance" style="margin-top:12px">
+          <div class="sig-label">Key Legal Battle — Apple v. Samsung</div>
+          <p>Apple sued Samsung in multiple countries claiming Galaxy phones copied the iPhone's rounded rectangle shape, grid of icons, and other design elements. US litigation lasted years and resulted in damages awards exceeding $1 billion (later reduced). This established that design patents for consumer electronics carry enormous commercial value and are worth vigorously defending globally.</p>
+        </div>
+        <div class="verdict" style="margin-top:10px">
+          <div class="verdict-label">Lesson for IP Law</div>
+          <p>A product's aesthetic identity can be as commercially valuable as its technical innovations. Design registration is a strategic business tool. Design patents can be enforced simultaneously across multiple jurisdictions worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-case">
+    <div class="product-header">
+      <div class="product-stripe" style="background:var(--gold)"></div>
+      <div class="product-content">
+        <div class="product-meta">CASE 02 · INDUSTRIAL DESIGN · PRODUCT DESIGN</div>
+        <div class="product-title">Alessi Juicy Salif Citrus Juicer</div>
+        <div style="margin-bottom:10px"><span class="tag">Iconic Design</span><span class="tag gold">MoMA Collection</span></div>
+        <div class="case-section-title">Background</div>
+        <p>Designed by <strong>Philippe Starck</strong> for Italian design company <strong>Alessi</strong> in 1990, legend has it Starck sketched the design on a restaurant napkin while eating squid. It became one of the most recognised objects in the history of product design.</p>
+        <div class="case-section-title">Design Features</div>
+        <ul><li><strong>Sculptural, organic form</strong> — resembles a space-age insect or squid with three splayed legs</li><li><strong>Three tapered legs</strong> — support the juicer above a glass</li><li><strong>Pointed conical top</strong> — juice-extracting cone, approximately 29 cm tall</li><li><strong>Cast aluminium</strong> — later versions in gold-plated aluminium</li></ul>
+        <div class="case-section-title">Controversy &amp; Cultural Impact</div>
+        <p>The Juicy Salif is controversial because it prioritises aesthetics over function. Critics note juice often runs down the legs rather than into the glass, seeds aren't filtered, and aluminium reacts with citric acid. Starck himself said it was not meant to squeeze lemons but to <em>start conversations</em>.</p>
+        <div class="significance" style="margin-top:12px">
+          <div class="sig-label">IP &amp; Design Significance</div>
+          <p>Part of MoMA New York's permanent collection. Illustrates a core IP principle: <strong>design protection covers aesthetic aspects regardless of functional efficiency</strong>. A design need not work optimally to deserve protection — only to be original and aesthetically distinctive. Industrial design can transcend utility and become cultural heritage.</p>
+        </div>
+        <div class="verdict" style="margin-top:10px">
+          <div class="verdict-label">Lesson for IP Law</div>
+          <p>Industrial design protection is granted for visual/aesthetic character independent of functional performance. This is why the legal definition explicitly excludes "any mode or principle of construction."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-case">
+    <div class="product-header">
+      <div class="product-stripe" style="background:var(--green)"></div>
+      <div class="product-content">
+        <div class="product-meta">CASE 03 · INDUSTRIAL DESIGN · TRANSPORTATION</div>
+        <div class="product-title">Vespa Scooter — Piaggio (1946)</div>
+        <div style="margin-bottom:10px"><span class="tag">Heritage Design</span><span class="tag green">Cultural Icon</span></div>
+        <div class="case-section-title">Background</div>
+        <p>Designed by aeronautical engineer <strong>Corradino D'Ascanio</strong> for <strong>Piaggio</strong> in post-war Italy (1946). D'Ascanio disliked conventional motorcycles and brought an aircraft designer's eye — resulting in an entirely novel form of personal transport.</p>
+        <div class="case-section-title">Design Features</div>
+        <ul><li><strong>Monocoque steel body</strong> — single-piece frame forming both structure and aesthetic shell (unlike conventional motorcycles)</li><li><strong>Enclosed engine</strong> — integrated within body, protecting rider's clothes — revolutionary at the time</li><li><strong>Streamlined organic curves</strong> — drawn from aeronautical design principles</li><li><strong>Distinctive front fairing</strong> — curved front shield wrapping around handlebars</li><li><strong>Step-through frame</strong> — allowed riders in formal wear or skirts to mount comfortably</li></ul>
+        <div class="case-section-title">Cultural Impact</div>
+        <p>Became a global symbol of Italian style, famously appearing in the 1953 film <em>Roman Holiday</em> with Audrey Hepburn and Gregory Peck. Over 19 million Vespas sold worldwide.</p>
+        <div class="significance" style="margin-top:12px">
+          <div class="sig-label">IP &amp; Design Significance</div>
+          <p>Demonstrates <strong>design longevity</strong> — a well-protected industrial design can maintain commercial and cultural relevance across 75+ years. Piaggio has consistently registered design updates while preserving the iconic visual identity. Shows how design protection can coexist and reinforce trademark protection for overall brand identity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-case">
+    <div class="product-header">
+      <div class="product-stripe" style="background:#c04040"></div>
+      <div class="product-content">
+        <div class="product-meta">CASE 04 · INDUSTRIAL DESIGN · WATCHMAKING</div>
+        <div class="product-title">Swatch Watch — Swatch Group (1983)</div>
+        <div style="margin-bottom:10px"><span class="tag">Design Innovation</span><span class="tag red">Industry Revival</span></div>
+        <div class="case-section-title">Background</div>
+        <p>Introduced in 1983 as a response to the Swiss watchmaking crisis — the industry was losing market share to cheaper Japanese quartz watches. Led by Ernst Thomke and designed by Jacques Müller and Elmar Mock, Swatch reimagined what a watch could be.</p>
+        <div class="case-section-title">Design Features</div>
+        <ul><li><strong>Colourful injection-moulded plastic casing</strong> — breaking the convention of metal or leather watches</li><li><strong>Minimalist, bold dial design</strong> with strong visual identity</li><li><strong>Only 51 components</strong> (vs. 90+ in conventional Swiss watches) — enabled thinner profile and lower cost</li><li><strong>Ultrasonic welding</strong> — permanently sealed casing; designed for replacement not repair</li><li><strong>Seasonal design collections</strong> — like fashion collections, creating collector demand</li></ul>
+        <div class="case-section-title">Commercial Impact</div>
+        <p>Originally priced at CHF 50, positioned as a fashion accessory. Special editions produced with artists Keith Haring and Kiki Picasso, turning them into collectibles. The strategy revived the Swiss watch industry.</p>
+        <div class="significance" style="margin-top:12px">
+          <div class="sig-label">IP &amp; Design Significance</div>
+          <p>Demonstrates how industrial design can <strong>democratise access</strong> while creating genuine IP value. Each seasonal design collection required new registrations. Shows that design used as the primary differentiator (rather than technical function) can save entire industries. Also illustrates interaction between design, fashion, and art in creating additional IP layers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-case">
+    <div class="product-header">
+      <div class="product-stripe" style="background:var(--blue)"></div>
+      <div class="product-content">
+        <div class="product-meta">CASE 05 · INDUSTRIAL DESIGN · CONSUMER GOODS</div>
+        <div class="product-title">Oxo Good Grips Kitchen Tools</div>
+        <div style="margin-bottom:10px"><span class="tag">Universal Design</span><span class="tag blue">User-Centred</span></div>
+        <div class="case-section-title">Background</div>
+        <p>Developed in 1990 by <strong>Sam Farber</strong> for <strong>Oxo International</strong> after he noticed his wife Betsey, who had mild arthritis, struggled with conventional kitchen tool handles. Farber hired <strong>Smart Design LLC</strong> to pioneer a new approach.</p>
+        <div class="case-section-title">Design Features</div>
+        <ul><li><strong>Oversized oval handles</strong> — large enough for comfortable grip; oval cross-section prevents rolling</li><li><strong>Soft non-slip Santoprene rubber</strong> — distinctive black rubber fins that flex and conform to the hand</li><li><strong>Fin design</strong> — raised fins improve grip and signal ergonomic intent visually</li><li><strong>Ambidextrous use</strong> — intuitive controls for all hand orientations</li><li><strong>Durable materials</strong> — stainless steel combined with soft-grip bodies</li></ul>
+        <div class="case-section-title">Universal Design Philosophy</div>
+        <p>Oxo pioneered <strong>Universal Design (Inclusive Design)</strong> — designing for people with the widest range of physical abilities. Products designed for people with arthritis or limited grip are paradoxically more comfortable for everyone. "Design for the extremes" produces mainstream products with broader appeal.</p>
+        <div class="significance" style="margin-top:12px">
+          <div class="sig-label">IP &amp; Design Significance</div>
+          <p>Demonstrates that design protection is valuable not just for luxury goods but for everyday utilitarian products. The distinctive soft-grip handle was widely imitated, making design protection essential. Proves that <strong>functional aesthetics and social inclusivity can be commercially successful</strong> — and legally protectable — design strategies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:8px"><div class="card-title">Section B — Indian Copyright &amp; Broadcasting Cases</div></div>
+
+  <div class="case-card">
+    <div class="case-header">
+      <div class="case-num">06</div>
+      <div class="case-header-text">
+        <h3>Super Cassettes Industries Ltd. v. Entertainment Network (India) Ltd.</h3>
+        <p>COPYRIGHT BOARD · BROADCASTING RIGHTS · COMPULSORY LICENCE UNDER SECTION 31</p>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="parties-grid">
+        <div class="party"><div class="party-label">Appellant</div><div class="party-name">Super Cassettes Industries Ltd. (T-Series)</div></div>
+        <div class="vs">v.</div>
+        <div class="party"><div class="party-label">Respondent</div><div class="party-name">Entertainment Network India Ltd. (Radio Mirchi FM)</div></div>
+      </div>
+      <div class="case-section-title">Background &amp; Facts</div>
+      <p>T-Series owned copyrights in a large catalogue of musical works. Entertainment Network India Ltd. (ENIL), operating Radio Mirchi FM, had been broadcasting T-Series songs <strong>without any licence or authorization</strong>. In legal proceedings, ENIL admitted this infringement. ENIL then applied to the Copyright Board for a <strong>compulsory licence</strong> under Section 31 to broadcast T-Series songs. The Copyright Board directed the Registrar to grant the licence. T-Series challenged this, arguing it rewarded wrongdoing.</p>
+      <div class="case-section-title" style="margin-top:14px">Issues</div>
+      <ul>
+        <li>Can a compulsory licence be granted to an admitted infringer?</li>
+        <li>Is the Copyright Board's power to grant licences mandatory or discretionary?</li>
+        <li>How to balance private copyright rights vs. public interest?</li>
+      </ul>
+      <div class="verdict" style="margin-top:12px">
+        <div class="verdict-label">Decision / Held</div>
+        <p><strong>(i)</strong> Granting a compulsory licence to an admitted infringer would put a premium on default and encourage others to first infringe and then seek a licence when caught. This was held impermissible.</p>
+        <p><strong>(ii)</strong> Section 31(1) uses the word <strong>"may"</strong> — the Copyright Board has discretion, not a mandatory obligation to grant licences. Licence can be granted or refused on valid grounds after sufficient inquiry.</p>
+        <p><strong>(iii)</strong> The Board must maintain a <strong>delicate balance</strong> between the private rights of the copyright owner and larger public interest.</p>
+      </div>
+      <div class="significance" style="margin-top:10px">
+        <div class="sig-label">Significance</div>
+        <p>Establishes that the compulsory licence mechanism cannot be weaponized by infringers to legitimize wrongdoing. Reinforces voluntary licensing as the primary mechanism. Clarifies discretionary nature of Copyright Board powers and the public interest–private rights balance.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header">
+      <div class="case-num">07</div>
+      <div class="case-header-text">
+        <h3>Super Cassettes Industries Ltd. v. Bathla Cassette Industries Pvt. Ltd.</h3>
+        <p>DELHI HIGH COURT · VERSION RECORDINGS · SECTION 52(1)(j) · PERFORMER'S RIGHTS</p>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="parties-grid">
+        <div class="party"><div class="party-label">Plaintiff</div><div class="party-name">Super Cassettes Industries Ltd. (T-Series)</div></div>
+        <div class="vs">v.</div>
+        <div class="party"><div class="party-label">Defendant</div><div class="party-name">Bathla Cassette Industries Pvt. Ltd.</div></div>
+      </div>
+      <div class="case-section-title">Background &amp; Facts</div>
+      <p>T-Series produced a <strong>version recording</strong> (cover version) of "Chalo Dildar Chalo" from the film <em>Pakeezah</em> (originally owned by Mahal Pictures) under <strong>Section 52(1)(j)</strong> — paying ₹400 royalty for 10,000 copies to Mahal Pictures. The cover was released on cassettes titled "Yadein Vol. I &amp; II" sung by lesser-known singers under titles suggesting they were sung by Mukesh, Lata, and Rafi.</p>
+      <p>When Bathla attempted to produce a cover of T-Series' version — following the same s.52(1)(j) procedure and offering T-Series a royalty — T-Series sought an injunction, claiming independent copyright in their version recording.</p>
+      <div class="case-section-title" style="margin-top:14px">Core Legal Question</div>
+      <p>Can a version recording made under s.52(1)(j) itself claim independent copyright protection? Can T-Series — having benefited from s.52 to cover someone else's song — prevent others from doing the same to their cover?</p>
+      <div class="two-col" style="margin-top:12px">
+        <div class="mini-card"><div class="mini-title">T-Series Argued</div><ul><li>Engaged musicians, singers, conductors independently</li><li>Used independent skill and labour</li><li>Created a "substantially new arrangement"</li><li>Therefore entitled to separate copyright</li></ul></div>
+        <div class="mini-card"><div class="mini-title">Bathla Argued</div><ul><li>s.52 is a statutory defence, not a creative original work</li><li>Section 13(3)(b): no copyright in a sound recording made infringing another copyright</li><li>1994 amendment: performer's rights of original artists violated by substituting them</li><li>T-Series cannot prevent what it itself did</li></ul></div>
+      </div>
+      <div class="verdict" style="margin-top:12px">
+        <div class="verdict-label">Decision / Held</div>
+        <p>T-Series' claim for injunction was <strong>not sustainable</strong>. A work created under s.52(1)(j) statutory defence cannot claim independent copyright — the section pre-supposes that the derived product would otherwise have been an infringement. Having sought s.52 protection, T-Series acknowledged their work was a copy, not an original. The defendant was entitled to do to T-Series' version exactly what T-Series had done to Mahal Pictures' original.</p>
+      </div>
+      <div class="significance" style="margin-top:10px">
+        <div class="sig-label">Significance</div>
+        <p>Landmark case on limits of statutory licence for cover versions. A party cannot simultaneously claim the benefit of a statutory exception and then claim full copyright for that work. Also highlights how the 1994 amendment's performer's rights protect original artists — substituting them with lesser singers may constitute a violation.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header">
+      <div class="case-num">08</div>
+      <div class="case-header-text">
+        <h3>Video Master v. Nishi Productions</h3>
+        <p>COPYRIGHT · DIVISIBILITY OF RIGHTS · CABLE TV vs. SATELLITE BROADCASTING</p>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="parties-grid">
+        <div class="party"><div class="party-label">Plaintiff</div><div class="party-name">Video Master (video copyright holder)</div></div>
+        <div class="vs">v.</div>
+        <div class="party"><div class="party-label">Defendant</div><div class="party-name">Nishi Productions (film producer)</div></div>
+      </div>
+      <div class="case-section-title">Background &amp; Facts</div>
+      <p>Video Master claimed it was assigned sole and exclusive <strong>video copyrights</strong> in the film "Bees Saal Baad" by Nishi Productions. The dispute arose when Nishi entered into a separate agreement with another distributor who used the film to make cassettes for <strong>satellite TV transmission</strong>. Video Master alleged violation of their exclusive video copyright.</p>
+      <div class="case-section-title" style="margin-top:14px">Issue</div>
+      <p>Does an assignment of "video copyright" include cable TV and satellite broadcasting rights? Are these the same right or distinct rights?</p>
+      <div class="verdict" style="margin-top:12px">
+        <div class="verdict-label">Decision / Held</div>
+        <p><strong>(i)</strong> <strong>Cable TV rights</strong> and <strong>satellite broadcasting rights</strong> are two distinct and different rights under the Copyright Act. They can exist in different persons simultaneously without either infringing the other.</p>
+        <p><strong>(ii)</strong> Receiving satellite signals on a dish antenna and relaying them through cable to viewers does <strong>not</strong> constitute a violation of the plaintiff's exclusive video copyright. These are separate modes of exploitation requiring separate assignments.</p>
+      </div>
+      <div class="significance" style="margin-top:10px">
+        <div class="sig-label">Significance</div>
+        <p>Fundamental case on the <strong>divisibility of copyright</strong>. Copyright is a bundle of distinct rights — each mode of exploitation (video, cable, satellite, theatrical) can be separately assigned to different parties. When drafting copyright assignments, every mode of exploitation must be specifically enumerated. Silence is construed narrowly.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header">
+      <div class="case-num">09</div>
+      <div class="case-header-text">
+        <h3>Garware Plastics and Polysters Ltd. v. Telelink</h3>
+        <p>BOMBAY HIGH COURT · CABLE TV AS PUBLIC BROADCAST · DEFINING "PUBLIC"</p>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="parties-grid">
+        <div class="party"><div class="party-label">Plaintiff</div><div class="party-name">Garware Plastics and Polysters Ltd.</div></div>
+        <div class="vs">v.</div>
+        <div class="party"><div class="party-label">Defendant</div><div class="party-name">Telelink (cable operators)</div></div>
+      </div>
+      <div class="case-section-title">Background &amp; Facts</div>
+      <p>Garware owned copyright in films and had assigned the right to <strong>broadcast via Doordarshan</strong> to the Government of India, but retained the right to <strong>telecast via cable television</strong>. Telelink — a cable operator — was showing Garware's films to subscribers without permission. The key question: is showing a film on cable a broadcast to the "public", thereby infringing copyright?</p>
+      <div class="case-section-title" style="margin-top:14px">Issues</div>
+      <ul>
+        <li>Does cable TV transmission constitute a "broadcast" to the "public"?</li>
+        <li>Do cable TV subscribers constitute "the public" or a private group?</li>
+      </ul>
+      <div class="verdict" style="margin-top:12px">
+        <div class="verdict-label">Decision / Held</div>
+        <p><strong>(i)</strong> Whether a communication is to the public depends on the nature of the receiving persons. If they can be characterised as "the public or a portion of the public," the communication is a <strong>broadcast</strong>. The court held cable TV transmission is a broadcast to the public.</p>
+        <p><strong>(ii)</strong> Cable TV viewers are not members of one family or their guests — they have no homogeneity. They are spread across various apartments and public places in a locality. Therefore they are <strong>members of the public</strong>.</p>
+        <p><strong>(iii)</strong> The defendants were violating the plaintiff's copyright by broadcasting films via cable without the rights holder's consent.</p>
+      </div>
+      <div class="significance" style="margin-top:10px">
+        <div class="sig-label">Significance</div>
+        <p>Defined the crucial boundary between <strong>private communication</strong> and <strong>public broadcast</strong> in the cable TV context. The "family/homogeneous group" test distinguishes private from public communication. Established that cable operators need separate licences from copyright holders. Contributed to the regulatory framework bringing cable operators under licensing obligations.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:8px"><div class="card-title">Section C — Cyber Law Cases</div></div>
+
+  <div class="case-card">
+    <div class="case-header">
+      <div class="case-num">10</div>
+      <div class="case-header-text">
+        <h3>Yahoo! Inc. v. Akash Arora &amp; Anr.</h3>
+        <p>DELHI HIGH COURT · 78 (1999) DLT 285 · CYBERSQUATTING · DOMAIN NAMES &amp; TRADEMARKS</p>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="parties-grid">
+        <div class="party"><div class="party-label">Plaintiff</div><div class="party-name">Yahoo! Inc. (USA)</div></div>
+        <div class="vs">v.</div>
+        <div class="party"><div class="party-label">Defendant</div><div class="party-name">Akash Arora &amp; Anr.</div></div>
+      </div>
+      <div class="case-section-title">Background &amp; Facts</div>
+      <p>Yahoo! Inc. operates the globally famous portal yahoo.com. Akash Arora registered and operated <strong>www.yahooindia.com</strong> — a website with virtually identical branding, look, feel, and content to Yahoo!'s official site, targeting Indian internet users. Yahoo! filed suit for trademark infringement, passing off, and copyright infringement. At the time, the Indian Trade Marks Act, 1999 had <em>no explicit provision protecting domain names</em>. The defendant argued domain names were merely technical addresses, not trademarks.</p>
+      <div class="case-section-title" style="margin-top:14px">Issues</div>
+      <ul>
+        <li>Are domain names entitled to trademark protection under Indian law without explicit statutory provision?</li>
+        <li>Does "yahooindia.com" infringe Yahoo!'s trademark?</li>
+        <li>Does similarity in look, feel, and content constitute copyright violation?</li>
+      </ul>
+      <div class="verdict" style="margin-top:12px">
+        <div class="verdict-label">Decision / Held — Delhi High Court</div>
+        <p><strong>(i)</strong> <strong>First Indian case</strong> to directly link trademarks and domain names. Domain names are entitled to trademark protection under Indian law even without explicit statutory provision. "Yahoo!" is a well-known trademark with extensive goodwill.</p>
+        <p><strong>(ii)</strong> "yahooindia.com" is deceptively similar and constitutes <strong>passing off</strong> and trademark infringement — likely to cause confusion to internet users.</p>
+        <p><strong>(iii)</strong> Similarities in <strong>look and feel</strong> and content of the website constitute <strong>copyright violations</strong> in addition to trademark violation. Injunction granted against the defendant.</p>
+      </div>
+      <div class="significance" style="margin-top:10px">
+        <div class="sig-label">Significance</div>
+        <p>India's first major cybersquatting case. Established: domain names are protectable as trademarks · internet users can be confused by domain names just as by product names · website design can attract copyright protection. Supreme Court reiterated this in <strong>Satyam Infoway v. Sifynet (2004) 6 SCC 145</strong>. Led to development of India's INDRP (domain dispute resolution) modelled on ICANN's UDRP.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-card">
+    <div class="case-header">
+      <div class="case-num">11</div>
+      <div class="case-header-text">
+        <h3>T-Series v. MySpace (Delhi High Court)</h3>
+        <p>DELHI HIGH COURT · INTERMEDIARY LIABILITY · ONLINE COPYRIGHT INFRINGEMENT · SAFE HARBOUR</p>
+      </div>
+    </div>
+    <div class="case-body">
+      <div class="parties-grid">
+        <div class="party"><div class="party-label">Plaintiff</div><div class="party-name">Super Cassettes Industries Ltd. (T-Series)</div></div>
+        <div class="vs">v.</div>
+        <div class="party"><div class="party-label">Defendant</div><div class="party-name">MySpace Inc. (social networking / video platform)</div></div>
+      </div>
+      <div class="case-section-title">Background &amp; Facts</div>
+      <p>T-Series sued MySpace — the social networking platform — for <strong>copyright infringement</strong> after users uploaded T-Series' copyrighted songs and music videos without authorization. T-Series alleged MySpace facilitated and profited from this infringement without taking adequate steps to prevent it. MySpace claimed the "safe harbour" protection as a mere <strong>intermediary</strong> hosting user-uploaded content.</p>
+      <div class="case-section-title" style="margin-top:14px">Central Legal Question</div>
+      <p>Under what circumstances is an online platform liable for users' copyright infringement? What obligations must an intermediary fulfil to claim safe harbour protection?</p>
+      <div class="verdict" style="margin-top:12px">
+        <div class="verdict-label">Decision / Key Principles</div>
+        <p><strong>(i)</strong> An intermediary cannot claim blanket immunity. Safe harbour requires implementing systems to <strong>remove infringing content upon notice</strong> from rights holders.</p>
+        <p><strong>(ii)</strong> Where the platform has <strong>actual knowledge</strong> of infringement (through rights holder notices) and fails to act, it loses safe harbour and becomes liable.</p>
+        <p><strong>(iii)</strong> Distinction between <strong>proactive monitoring</strong> (cannot be mandated) and <strong>responsive takedowns</strong> (can and must be done upon notice). Platforms cannot pre-screen all content but must act swiftly on specific notice.</p>
+        <p><strong>(iv)</strong> Court directed MySpace to implement a <strong>metadata-based filtering system</strong> to help identify and block infringing content in future.</p>
+      </div>
+      <div class="significance" style="margin-top:10px">
+        <div class="sig-label">Significance</div>
+        <p>Foundational to intermediary liability in the Indian internet context. Established the "notice and takedown" regime as the baseline. Clarified that safe harbour is conditional, not absolute — platforms must have robust grievance mechanisms. Distinguished active from passive participation in infringement. Influenced framing of intermediary liability rules in the IT Amendment Act 2008 and subsequent Intermediary Guidelines.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Electronic Evidence Cases — Quick Reference</div>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Case</th><th>Court &amp; Year</th><th>Key Ruling</th></tr>
+        <tr><td><strong>Amitabh Bagchi v. Ena Bagchi</strong></td><td>Calcutta HC, AIR 2005 Cal 11</td><td>Video conferencing is a valid mode of examining witnesses; digital evidence admitted in matrimonial proceedings</td></tr>
+        <tr><td><strong>Dharambir v. CBI</strong></td><td>Delhi HC, 148 (2008) DLT 289</td><td>Hard disk once used = electronic record = computer output; must be produced in its entirety in court; selective production not permitted</td></tr>
+        <tr><td><strong>State (NCT Delhi) v. Navjot Sandhu</strong></td><td>Supreme Court, AIR 2005 SC 3820</td><td>Cross-examination of competent witness sufficient to authenticate an electronic document; call records admissible as evidence</td></tr>
+        <tr><td><strong>Bodala Murali Krishna v. Prathima</strong></td><td>AP HC, 2007 (2) ALD 72</td><td>Electronic records and digital signatures are admissible evidence under Evidence Act amendments</td></tr>
+        <tr><td><strong>Satyam Infoway v. Sifynet</strong></td><td>Supreme Court, (2004) 6 SCC 145</td><td>Reiterated Yahoo! principle; domain names protected under Indian trademark law; cybersquatting actionable</td></tr>
+      </table>
+    </div>
+  </div>
+
+</section>
+
+<!-- TAB 5: QUICK REVISION -->
+<section class="tab-section" id="tab-quick">
+  <div class="card">
+    <div class="card-title">Key Numbers at a Glance</div>
+    <div class="stat-grid">
+      <div class="stat-box"><span class="stat-val">60 yrs</span><div class="stat-label">Copyright after death (India literary)</div></div>
+      <div class="stat-box"><span class="stat-val">50 yrs</span><div class="stat-label">Berne Convention minimum</div></div>
+      <div class="stat-box"><span class="stat-val">60 yrs</span><div class="stat-label">Films &amp; sound from first publication</div></div>
+      <div class="stat-box"><span class="stat-val">12th</span><div class="stat-label">India's rank in cyber law globally</div></div>
+      <div class="stat-box"><span class="stat-val">36 hrs</span><div class="stat-label">Intermediary acknowledge grievance</div></div>
+      <div class="stat-box"><span class="stat-val">21 days</span><div class="stat-label">Intermediary full response</div></div>
+      <div class="stat-box"><span class="stat-val">₹2 lakh</span><div class="stat-label">Max fine copyright infringement</div></div>
+      <div class="stat-box"><span class="stat-val">₹1 crore</span><div class="stat-label">Max IT Act compensation</div></div>
+      <div class="stat-box"><span class="stat-val">10 yrs</span><div class="stat-label">Max imprisonment under IT Act</div></div>
+      <div class="stat-box"><span class="stat-val">3 yrs</span><div class="stat-label">Max imprisonment copyright infringement</div></div>
+      <div class="stat-box"><span class="stat-val">1946</span><div class="stat-label">Vespa scooter first manufactured</div></div>
+      <div class="stat-box"><span class="stat-val">1886</span><div class="stat-label">Berne Convention adopted</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">International Conventions</div>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>Convention</th><th>Year</th><th>Covers</th><th>Body</th></tr>
+        <tr><td><strong>Berne Convention</strong></td><td>1886</td><td>Literary &amp; artistic works; economic &amp; moral rights; min. lifetime + 50 yrs</td><td>WIPO</td></tr>
+        <tr><td><strong>Rome Convention</strong></td><td>1961</td><td>Related rights — performers, phonogram producers, broadcasters</td><td>UNESCO + ILO + WIPO</td></tr>
+        <tr><td><strong>TRIPS Agreement</strong></td><td>1994</td><td>All IP rights; enforced via WTO dispute mechanism; incorporates Berne &amp; Rome standards</td><td>WTO</td></tr>
+        <tr><td><strong>UNCITRAL Model Law</strong></td><td>1996</td><td>E-commerce framework; basis for India's IT Act 2000</td><td>United Nations</td></tr>
+        <tr><td><strong>Hague System</strong></td><td>Ongoing</td><td>International industrial design registration; single application for multiple countries</td><td>WIPO</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">All Cases Quick Reference</div>
+    <div class="tbl-wrap">
+      <table>
+        <tr><th>#</th><th>Case Name</th><th>Area</th><th>Key Principle</th></tr>
+        <tr><td>1</td><td>Apple iPhone Design</td><td>Industrial Design</td><td>Design patents for consumer electronics have enormous value; design infringement can lead to billion-dollar litigation across jurisdictions</td></tr>
+        <tr><td>2</td><td>Alessi Juicy Salif</td><td>Industrial Design</td><td>Design protection covers aesthetic aspects regardless of functional efficiency; design can become cultural heritage (MoMA)</td></tr>
+        <tr><td>3</td><td>Vespa Scooter</td><td>Industrial Design</td><td>Design longevity — well-protected designs maintain relevance across 75+ years; design and trademark protection coexist</td></tr>
+        <tr><td>4</td><td>Swatch Watch</td><td>Industrial Design</td><td>Design as primary differentiator can revive entire industries; democratising access creates protectable IP value</td></tr>
+        <tr><td>5</td><td>Oxo Good Grips</td><td>Industrial Design</td><td>Universal design for accessibility is commercially successful; functional aesthetics on everyday goods deserve protection</td></tr>
+        <tr><td>6</td><td>Super Cassettes v. ENIL (Radio Mirchi)</td><td>Copyright / Broadcasting</td><td>Compulsory licence not grantable to admitted infringer; Copyright Board's power under s.31 is discretionary (word "may")</td></tr>
+        <tr><td>7</td><td>Super Cassettes v. Bathla Cassettes</td><td>Copyright / Performer's Rights</td><td>s.52(1)(j) version recording cannot claim independent copyright; performer's rights violated by substituting original artists</td></tr>
+        <tr><td>8</td><td>Video Master v. Nishi Productions</td><td>Copyright (divisibility)</td><td>Cable TV rights and satellite rights are distinct; copyright is a bundle of separable rights; silence in assignment construed narrowly</td></tr>
+        <tr><td>9</td><td>Garware Plastics v. Telelink</td><td>Copyright / Broadcasting</td><td>Cable TV transmission to subscribers = broadcast to the public; "family/homogeneous group" test for public vs private communication</td></tr>
+        <tr><td>10</td><td>Yahoo! Inc. v. Akash Arora</td><td>Cyber Law / Trademarks</td><td>First Indian cybersquatting case; domain names = trademarks under Indian law; website look-and-feel protected by copyright</td></tr>
+        <tr><td>11</td><td>T-Series v. MySpace</td><td>Cyber Law / Intermediary</td><td>Safe harbour is conditional; notice-and-takedown regime; distinction between proactive monitoring (not required) and responsive takedown (required)</td></tr>
+        <tr><td>12–15</td><td>Electronic Evidence Cases</td><td>Cyber Law / Evidence</td><td>Video conferencing admissible; hard disk = electronic record produced in entirety; cross-examination authenticates; digital signatures admissible</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-title">Common Exam Confusions — Cleared</div>
+    <div class="confusion-item"><div style="font-size:18px;flex-shrink:0;margin-top:2px">⚠️</div><div><p><strong>Design vs. Copyright:</strong> Industrial design applies when a design is applied to a mass-produced article and judged solely by the eye. If it cannot be applied to an article (e.g., a painting), it falls under copyright as an artistic work. Some designs also qualify as trademarks. The categories are not mutually exclusive.</p></div></div>
+    <div class="confusion-item"><div style="font-size:18px;flex-shrink:0;margin-top:2px">⚠️</div><div><p><strong>Assignment vs. License:</strong> Assignment = transfer of ownership itself. License = you retain ownership but give permission. An assignee becomes the new owner; a licensee only gets permission within agreed terms. Both must be in writing for copyright.</p></div></div>
+    <div class="confusion-item"><div style="font-size:18px;flex-shrink:0;margin-top:2px">⚠️</div><div><p><strong>Digital Signature vs. Electronic Signature:</strong> All digital signatures are electronic signatures (it's a subset), but not vice versa. Digital signatures use PKI, asymmetric cryptography, and certificate authority validation. Electronic signatures is the broader category including scanned signatures, ticks, etc.</p></div></div>
+    <div class="confusion-item"><div style="font-size:18px;flex-shrink:0;margin-top:2px">⚠️</div><div><p><strong>Broadcaster's right ≠ Author's copyright:</strong> They are separate, stackable rights. The broadcaster's right does not merge with or extinguish the original copyright in the broadcast content. Even for public-domain works, broadcasters retain separate rights. Broadcaster's right is based on <em>investment</em>, not creative contribution.</p></div></div>
+    <div class="confusion-item"><div style="font-size:18px;flex-shrink:0;margin-top:2px">⚠️</div><div><p><strong>Copyright is automatic:</strong> It begins at creation and fixation in tangible form. Registration is NOT a prerequisite for protection in India or under the Berne Convention. Registration helps enforce rights in court (especially US), but the right itself exists from the moment of creation.</p></div></div>
+    <div class="confusion-item"><div style="font-size:18px;flex-shrink:0;margin-top:2px">⚠️</div><div><p><strong>Ideas are NOT protected:</strong> Copyright protects the expression of ideas, not the ideas themselves. Two authors can independently write about the same idea — each expression is protected, but neither can monopolise the underlying concept, method, procedure, or mathematical formula. (TRIPS Article 9.2).</p></div></div>
+    <div class="confusion-item" style="border-bottom:none;padding-bottom:0"><div style="font-size:18px;flex-shrink:0;margin-top:2px">⚠️</div><div><p><strong>IT Act applicability:</strong> Extends to offences outside India if a computer/network in India is involved — regardless of offender's nationality. Does NOT apply to wills, negotiable instruments (except cheques), trusts, powers of attorney, or sale of immovable property.</p></div></div>
+  </div>
+</section>
+
+</main>
+<script>
+  function showTab(id, btn) {
+    document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    btn.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>
